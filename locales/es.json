@@ -1,0 +1,367 @@
+{
+    "appTitle": "Encuesta de Buenas Prácticas en Pruebas de Software",
+    "logout": "Salir",
+    "stepOne": {
+        "title": "Información General",
+        "fullName": "Nombre Completo",
+        "gender": "Género",
+        "email": "Correo Electrónico",
+        "country": "País",
+        "jobTitle": "Título del Trabajo",
+        "educationLevel": "Nivel Educativo",
+        "age": "Edad",
+        "yearsOfExperience": "Años de Experiencia",
+        "register": "Siguiente"
+    },
+    "genders": {
+        "male": "Masculino",
+        "female": "Femenino",
+        "other": "Otro"
+    },
+    "tcle": {
+        "hide": "Ocultar Término de Consentimiento Libre e Informado",
+        "show": "Mostrar Término de Consentimiento Libre e Informado",
+        "content": "Introducción",
+        "introduction": "Introducción",
+        "introductionContent": "Concordo en participar en los estudios no invasivos realizados por los investigadores, como parte de las actividades de investigación Caracterización y clasificación de buenos casos de prueba: mejores prácticas, características esenciales y herramientas.\n\nDurante este proceso, se presentarán conceptos sobre calidad en los casos de prueba y prácticas asociadas. Entiendo que durante las actividades asimilaré estos conceptos y aplicaré este conocimiento a lo largo de las etapas. Los investigadores llevarán a cabo el estudio que consistirá en la recopilación, análisis e informe de los datos de las respuestas desarrolladas. Entiendo que no estoy obligado a proporcionar información sobre mis respuestas en la actividad y que puedo solicitar la eliminación de mis resultados del experimento en cualquier momento. Entiendo que no habrá crédito ni beneficio adicional por participar en estos estudios. También entiendo que cuando se recopilen y analicen los datos, mi nombre será eliminado de los datos y no se utilizará en ningún momento durante el análisis ni cuando se presenten los resultados.",
+        "confidentiality": "Confidencialidad",
+        "confidentialityContent": "Toda la información recopilada en este estudio es confidencial y mi nombre no será identificado en ningún momento. Del mismo modo, me comprometo a no comunicar este contenido, a mantener confidenciales las prácticas presentadas que forman parte del experimento y a respetar las normas y licencias declaradas.",
+        "benefits": "Beneficios y Libertad de Retiro",
+        "benefitsContent": "Entiendo que los beneficios que recibiré de este estudio se limitan a aprender el material que se distribuye y enseña para cumplir con el proceso de investigación, independientemente de si participo o no en estos estudios, pero que los investigadores esperan aprender más sobre prácticas de calidad en los casos de prueba y los beneficios que estos estudios aportan al contexto de la Ingeniería de Software. Entiendo que soy libre de hacer preguntas en cualquier momento o solicitar que cualquier información relacionada conmigo no se incluya en el estudio. Entiendo que mi participación es de mi propia voluntad con el único objetivo de contribuir al avance y desarrollo de técnicas y procesos para la Ingeniería de Software.",
+        "accept": "He leído y estoy de acuerdo con el Término de Consentimiento Libre e Informado."
+    },
+    "stepTwo": {
+        "title": "Evaluación de Buenas Prácticas",
+        "instructions": "A continuación, se presenta un conjunto de prácticas relacionadas con la calidad de los casos de prueba. Opina sobre cada una de ellas considerando si estás Totalmente de acuerdo, De acuerdo, Neutral, En desacuerdo, o Totalmente en desacuerdo con cada una. Además, si lo deseas, también es posible incluir una observación en cada una de las prácticas. Si tienes dudas sobre de qué se trata una determinada práctica, el enlace 'Ver Más' presenta una breve descripción sobre la práctica en cuestión. En total son 40 prácticas.",
+        "show": "Ver Más",
+        "hide": "Ocultar",
+        "evaluation": "Evaluación",
+        "observation": "Observación",
+        "submit": "Siguiente",
+        "back": "Atrás"
+    },
+    "evaluations": {
+        "stronglyAgree": "Totalmente de Acuerdo",
+        "agree": "De Acuerdo",
+        "neutral": "Neutral",
+        "disagree": "En Desacuerdo",
+        "stronglyDisagree": "Totalmente en Desacuerdo"
+    },
+    "practices": {
+        "bp1": {
+            "title": "Especificación Atómica de Casos de Prueba",
+            "description": "Los casos de prueba se enfocan en un solo aspecto del requerimiento.",
+            "category": "Sentido Común",
+            "domain": "Gestión de Proyectos",
+            "use": "Independencia"
+        },
+        "bp2": {
+            "title": "Independencia Completa de los Casos de Prueba",
+            "description": "Los casos de prueba son independientes entre sí.",
+            "category": "Sentido Común",
+            "domain": "Gestión de Proyectos",
+            "use": "Separación de actividades"
+        },
+        "bp3": {
+            "title": "Cobertura de Flujos Normales y Excepcionales",
+            "description": "Los casos de prueba cubren tanto flujos normales como excepcionales.",
+            "category": "Sentido Común",
+            "domain": "Calidad y Mantenibilidad",
+            "use": "Cobertura"
+        },
+        "bp4": {
+            "title": "Análisis de Valores Limítrofes",
+            "description": "Los casos de prueba realizan análisis de valores limítrofes.",
+            "category": "Sentido Común",
+            "domain": "Calidad y Mantenibilidad",
+            "use": "Cobertura"
+        },
+        "bp5": {
+            "title": "Modularidad Completa de los Casos de Prueba",
+            "description": "Los casos de prueba están bien modularizados.",
+            "category": "Sentido Común",
+            "domain": "Calidad y Mantenibilidad",
+            "use": "Documentación"
+        },
+        "bp6": {
+            "title": "Análisis Detallado de Tamaño y Complejidad",
+            "description": "Los casos de prueba son pequeños y manejables en términos de tamaño y complejidad.",
+            "category": "Sentido Común",
+            "domain": "Calidad y Mantenibilidad",
+            "use": "Tamaño/Complejidad"
+        },
+        "bp7": {
+            "title": "Diseño Complejo para la Detección de Errores",
+            "description": "Los casos de prueba complejos están diseñados para detectar errores significativos.",
+            "category": "Sentido Común",
+            "domain": "Calidad y Mantenibilidad",
+            "use": "Diseño"
+        },
+        "bp8": {
+            "title": "Mantenimiento Completo del Código de Prueba",
+            "description": "El código de prueba se mantiene regularmente.",
+            "category": "Sentido Común",
+            "domain": "Calidad y Mantenibilidad",
+            "use": "Diseño"
+        },
+        "bp9": {
+            "title": "Trazabilidad Completa de los Casos de Prueba",
+            "description": "Los casos de prueba tienen enlaces de trazabilidad a los requisitos y al código fuente.",
+            "category": "Sentido Común",
+            "domain": "Gestión de Proyectos",
+            "use": "Gestión del conocimiento"
+        },
+        "bp10": {
+            "title": "Uso Estricto de Pruebas de Rendimiento y Seguridad",
+            "description": "Las pruebas de rendimiento y seguridad se realizan regularmente.",
+            "category": "Sentido Común",
+            "domain": "Rendimiento y Seguridad",
+            "use": "Rendimiento/Seguridad"
+        },
+        "bp11": {
+            "title": "Separación de Actividades de Prueba y Desarrollo",
+            "description": "Las actividades de prueba están separadas de las actividades de desarrollo.",
+            "category": "Sentido Común",
+            "domain": "Gestión de Proyectos",
+            "use": "Planificación temprana"
+        },
+        "bp12": {
+            "title": "Revisión Regular de los Casos de Prueba",
+            "description": "Los casos de prueba se revisan regularmente.",
+            "category": "Sentido Común",
+            "domain": "Gestión de Proyectos",
+            "use": "Revisión/Actualización"
+        },
+        "bp13": {
+            "title": "Entendimiento Claro de los Casos de Prueba",
+            "description": "Los casos de prueba son claros y fáciles de entender.",
+            "category": "Sentido Común",
+            "domain": "Calidad y Mantenibilidad",
+            "use": "Claridad"
+        },
+        "bp14": {
+            "title": "Planificación Temprana del Plan de Pruebas",
+            "description": "Las pruebas se involucran temprano en la fase de planificación.",
+            "category": "Sentido Común",
+            "domain": "Gestión de Proyectos",
+            "use": "Alineación del negocio"
+        },
+        "bp15": {
+            "title": "Cobertura Estructurada del Proceso de Pruebas",
+            "description": "Se utilizan enfoques estructurados para las pruebas de integración.",
+            "category": "Sentido Común",
+            "domain": "Calidad y Mantenibilidad",
+            "use": "Cobertura"
+        },
+        "bp16": {
+            "title": "Garantía Completa de la Calidad del Código de Prueba",
+            "description": "Se asegura una alta cobertura de código para los casos de prueba.",
+            "category": "Sentido Común",
+            "domain": "Calidad y Mantenibilidad",
+            "use": "Garantía de calidad"
+        },
+        "bp17": {
+            "title": "Utilización Adecuada de la Cobertura del Código",
+            "description": "Las métricas de cobertura del código se utilizan adecuadamente para garantizar la calidad de las pruebas.",
+            "category": "Soportado por la Literatura",
+            "domain": "Calidad y Mantenibilidad",
+            "use": "Garantía de calidad"
+        },
+        "bp18": {
+            "title": "Utilización Requerida de Pruebas Faltantes",
+            "description": "Se crean nuevas pruebas para cubrir el código no probado basado en métricas de cobertura.",
+            "category": "Soportado por la Literatura",
+            "domain": "Gestión de Proyectos",
+            "use": "Garantía de calidad"
+        },
+        "bp19": {
+            "title": "Utilización Eficiente de la Cobertura del Código",
+            "description": "Se apunta a mayores tasas de detección de errores en áreas de alta cobertura.",
+            "category": "Soportado por la Literatura",
+            "domain": "Gestión de Proyectos",
+            "use": "Garantía de calidad"
+        },
+        "bp20": {
+            "title": "Huella de Generación Pequeña",
+            "description": "Los casos de prueba tienen una pequeña huella y ejecutan un código mínimo.",
+            "category": "Soportado por la Literatura",
+            "domain": "Calidad y Mantenibilidad",
+            "use": "Tamaño/Complejidad"
+        },
+        "bp21": {
+            "title": "Priorización Completa del Diseño de Casos de Prueba",
+            "description": "El diseño de los casos de prueba se prioriza para cubrir diversos requisitos.",
+            "category": "Soportado por la Literatura",
+            "domain": "Calidad y Mantenibilidad",
+            "use": "Diseño"
+        },
+        "bp22": {
+            "title": "Adición Responsable de Mantenimiento",
+            "description": "Se añaden casos de prueba durante el mantenimiento para cubrir errores corregidos.",
+            "category": "Soportado por la Literatura",
+            "domain": "Gestión de Proyectos",
+            "use": "Revisión/Actualización"
+        },
+        "bp23": {
+            "title": "Utilización Adecuada de Aserciones de Prueba",
+            "description": "Los casos de prueba incluyen aserciones adecuadas para detectar errores.",
+            "category": "Soportado por la Literatura",
+            "domain": "Calidad y Mantenibilidad",
+            "use": "Diseño"
+        },
+        "bp24": {
+            "title": "Adición Responsable de Comentarios de Depuración",
+            "description": "Se añaden comentarios de depuración en el código de prueba.",
+            "category": "Soportado por la Literatura",
+            "domain": "Calidad y Mantenibilidad",
+            "use": "Diseño"
+        },
+        "bp25": {
+            "title": "Diseño Determinista de Resultados",
+            "description": "Los casos de prueba están diseñados para resultados deterministas.",
+            "category": "Soportado por la Literatura",
+            "domain": "Calidad y Mantenibilidad",
+            "use": "Diseño"
+        },
+        "bp26": {
+            "title": "Evitar Completamente los Efectos Secundarios",
+            "description": "Los casos de prueba no tienen efectos secundarios.",
+            "category": "Soportado por la Literatura",
+            "domain": "Calidad y Mantenibilidad",
+            "use": "Diseño"
+        },
+        "bp27": {
+            "title": "Utilización Adecuada de Etiquetas y Categorías",
+            "description": "Se utilizan etiquetas o categorías para organizar los casos de prueba.",
+            "category": "Soportado por la Literatura",
+            "domain": "Gestión de Proyectos",
+            "use": "Estructura organizacional"
+        },
+        "bp28": {
+            "title": "Utilización Responsable de la Generación Automática de Casos de Prueba",
+            "description": "Se utilizan herramientas para la generación automática de casos de prueba de manera responsable.",
+            "category": "Automatización y Gestión de Pruebas",
+            "domain": "Herramientas y Automatización",
+            "use": "Herramientas"
+        },
+        "bp29": {
+            "title": "Utilización Responsable de Herramientas de Gestión",
+            "description": "Las herramientas de gestión de pruebas se utilizan de manera efectiva.",
+            "category": "Automatización y Gestión de Pruebas",
+            "domain": "Herramientas y Automatización",
+            "use": "Herramientas"
+        },
+        "bp30": {
+            "title": "Utilización Adecuada de Herramientas de Estimación",
+            "description": "Se utilizan herramientas de estimación para evaluar el esfuerzo y el cronograma de las pruebas.",
+            "category": "Automatización y Gestión de Pruebas",
+            "domain": "Herramientas y Automatización",
+            "use": "Herramientas"
+        },
+        "bp31": {
+            "title": "Utilización Adecuada de Herramientas de Medición de Cobertura",
+            "description": "Se utilizan herramientas de medición de cobertura para garantizar pruebas exhaustivas.",
+            "category": "Automatización y Gestión de Pruebas",
+            "domain": "Herramientas y Automatización",
+            "use": "Herramientas"
+        },
+        "bp32": {
+            "title": "Utilización Completa de Herramientas de Integración Continua",
+            "description": "Las herramientas de integración continua se integran para la ejecución automática de pruebas.",
+            "category": "Automatización y Gestión de Pruebas",
+            "domain": "Herramientas y Automatización",
+            "use": "Herramientas"
+        },
+        "bp33": {
+            "title": "Selección Adecuada de Herramientas de Prueba",
+            "description": "Las herramientas de prueba se seleccionan según los requisitos del proyecto.",
+            "category": "Automatización y Gestión de Pruebas",
+            "domain": "Herramientas y Automatización",
+            "use": "Herramientas"
+        },
+        "bp34": {
+            "title": "Ajuste Alineado de la Organización de Pruebas",
+            "description": "Las actividades de prueba se alinean con la orientación del negocio.",
+            "category": "Orientación Empresarial",
+            "domain": "Gestión de Proyectos",
+            "use": "Alineación del negocio"
+        },
+        "bp35": {
+            "title": "Utilización Responsable de Pruebas Basadas en Riesgos",
+            "description": "Los esfuerzos de prueba se priorizan según los niveles de riesgo.",
+            "category": "Orientación Empresarial",
+            "domain": "Gestión de Proyectos",
+            "use": "Gestión de riesgos"
+        },
+        "bp36": {
+            "title": "Impacto Consciente en la Organización de Pruebas",
+            "description": "La orientación del negocio influye en los procesos de prueba.",
+            "category": "Orientación Empresarial",
+            "domain": "Gestión de Proyectos",
+            "use": "Estructura organizacional"
+        },
+        "bp37": {
+            "title": "Impacto Consciente en la Estrategia de Gestión del Conocimiento",
+            "description": "La orientación del negocio impacta en la estrategia de gestión del conocimiento.",
+            "category": "Orientación Empresarial",
+            "domain": "Gestión de Proyectos",
+            "use": "Gestión del conocimiento"
+        },
+        "bp38": {
+            "title": "Medición Cuidadosa del Impacto de la Subcontratación",
+            "description": "Se mide el impacto de la subcontratación de actividades de prueba.",
+            "category": "Orientación Empresarial",
+            "domain": "Gestión de Proyectos",
+            "use": "Gestión del conocimiento"
+        },
+        "bp39": {
+            "title": "Utilización Completa de la Metodología de Pruebas",
+            "description": "Se adhieren a metodologías de prueba definidas.",
+            "category": "Orientación Empresarial",
+            "domain": "Gestión de Proyectos",
+            "use": "Metodología"
+        },
+        "bp40": {
+            "title": "Definición Clara del Responsable de Pruebas",
+            "description": "Se definen claramente los profesionales o equipos responsables de las actividades de prueba.",
+            "category": "Orientación Empresarial",
+            "domain": "Gestión de Proyectos",
+            "use": "Estructura organizacional"
+        }
+    },
+    "stepThree": {
+        "title": "Evaluación de Buenas Prácticas",
+        "instructions": "A continuación se presenta el conjunto de prácticas relacionadas con la calidad de los casos de prueba junto a la categoría, el dominio al que pertenece y el uso en donde se puede enmarcar principalmente. Elige el nivel de relevancia de cada práctica frente a su categoría, dominio y uso. Además, si lo deseas, también es posible incluir una observación en cada una de las prácticas.",
+        "evaluationCategory": "Nivel de relevancia con Categoría",
+        "evaluationDomain": "Nivel de relevancia con Dominio",
+        "evaluationUse": "Nivel de relevancia con Uso",
+        "observation": "Observación",
+        "submit": "Siguiente",
+        "categoryName": "Categoria",
+        "domainName": "Dominio",
+        "useName": "Uso"
+    },
+    "stepFour": {
+        "title": "Priorización de Buenas Prácticas",
+        "instructions": "A continuación se presenta el conjunto de prácticas relacionadas con la calidad de los casos de prueba en orden aleatorio. Arrastra y ordena las prácticas de acuerdo al nivel de prioridad que consideres.",
+        "submit": "Siguiente"
+    },
+    "evaluationsRelev": {
+        "veryLow": "Muy baja",
+        "low": "Baja",
+        "moderate": "Moderada",
+        "high": "Alta",
+        "veryHigh": "Muy alta"
+    },
+    "stepFive": {
+        "title": "Herramientas para Prácticas",
+        "knowTool": "¿Conoce alguna herramienta de prueba que apoye esta práctica?",
+        "yes": "Sí",
+        "submit": "Siguiente"
+    },
+    "thankYou": {
+        "title": "¡Gracias!",
+        "message": "Gracias por completar la encuesta. Agradecemos sus comentarios.",
+        "homeButton": "Finalizar"
+    }
+}

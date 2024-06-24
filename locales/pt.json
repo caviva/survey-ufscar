@@ -1,0 +1,367 @@
+{
+    "appTitle": "Pesquisa sobre Melhores Práticas em Testes de Software",
+    "logout": "Sair",
+    "stepOne": {
+        "title": "Informaçaõ Geral",
+        "fullName": "Nome Completo",
+        "gender": "Gênero",
+        "email": "E-mail",
+        "country": "País",
+        "jobTitle": "Título do Trabalho",
+        "educationLevel": "Nível de Educação",
+        "age": "Idade",
+        "yearsOfExperience": "Anos de Experiência",
+        "register": "Próximo"
+    },
+    "genders": {
+        "male": "Masculino",
+        "female": "Feminino",
+        "other": "Outro"
+    },
+    "tcle": {
+        "hide": "Esconder Termo de Consentimento Livre e Esclarecido",
+        "show": "Mostrar Termo de Consentimento Livre e Esclarecido",
+        "content": "Introdução",
+        "introduction": "Introdução",
+        "introductionContent": "Concordo em participar dos estudos não invasivos realizados pelos pesquisadores, como parte das atividades de pesquisa Caracterização e classificação de bons casos de teste: melhores práticas, características essenciais e ferramentas.\n\nDurante este processo, conceitos sobre qualidade em casos de teste e práticas associadas serão apresentados. Entendo que durante as atividades assimilarei esses conceitos e aplicarei esse conhecimento ao longo das etapas. Os pesquisadores realizarão o estudo consistindo na coleta, análise e relato dos dados das respostas desenvolvidas. Entendo que não sou obrigado a fornecer informações sobre minhas respostas na atividade e que posso solicitar a remoção de meus resultados do experimento a qualquer momento. Entendo que não haverá nenhum crédito ou benefício adicional por participar desses estudos. Também entendo que, quando os dados forem coletados e analisados, meu nome será removido dos dados e não será utilizado em nenhum momento durante a análise ou quando os resultados forem apresentados.",
+        "confidentiality": "Confidencialidade",
+        "confidentialityContent": "Toda informação coletada neste estudo é confidencial, e meu nome não será identificado em momento algum. Da mesma forma, comprometo-me a não comunicar esse conteúdo, a manter confidenciais as práticas apresentadas que fazem parte do experimento, e a respeitar as regras e licenças declaradas.",
+        "benefits": "Benefícios e Liberdade de Desistência",
+        "benefitsContent": "Entendo que os benefícios que receberei deste estudo são limitados ao aprendizado do material que é distribuído e ensinado para cumprir o processo de pesquisa, independentemente de participar ou não desses estudos, mas que os pesquisadores esperam aprender mais sobre práticas de qualidade em casos de teste e os benefícios que esses estudos trazem para o contexto da Engenharia de Software. Entendo que sou livre para fazer perguntas a qualquer momento ou solicitar que qualquer informação relacionada a mim não seja incluída no estudo. Entendo que minha participação é de minha própria vontade com o único objetivo de contribuir para o avanço e desenvolvimento de técnicas e processos para a Engenharia de Software.",
+        "accept": "Eu li e concordo com o Termo de Consentimento Livre e Esclarecido."
+    },
+    "stepTwo": {
+        "title": "Avaliação das Melhores Práticas",
+        "instructions": "A seguir, é apresentado um conjunto de práticas relacionadas com a qualidade de casos de teste. Opine sobre cada uma delas considerando se Concordo Plenamente, Concordo, Neutro, Discordo, Discordo Plenamente em cada uma delas. Além disso, caso deseje, também é possível incluir uma observação em cada uma das práticas. Caso tenha dúvida sobre do que se trata determinada prática, o link 'Mostrar Mais' apresenta uma breve descrição sobre a prática em questão. Ao todo são 40 práticas.",
+        "show": "Mostrar Mais",
+        "hide": "Ocultar",
+        "evaluation": "Avaliação",
+        "observation": "Observação",
+        "submit": "Próximo",
+        "back": "Voltar"
+    },
+    "evaluations": {
+        "stronglyAgree": "Concordo Plenamente",
+        "agree": "Concordo",
+        "neutral": "Neutro",
+        "disagree": "Discordo",
+        "stronglyDisagree": "Discordo Plenamente"
+    },
+    "practices": {
+        "bp1": {
+            "title": "Especificação Atômica de Casos de Teste",
+            "description": "Os casos de teste são focados em um único aspecto do requisito.",
+            "category": "Senso Comum",
+            "domain": "Gestão de Projetos",
+            "use": "Independência"
+        },
+        "bp2": {
+            "title": "Independência Completa dos Casos de Teste",
+            "description": "Os casos de teste são independentes uns dos outros.",
+            "category": "Senso Comum",
+            "domain": "Gestão de Projetos",
+            "use": "Separação de atividades"
+        },
+        "bp3": {
+            "title": "Cobertura de Fluxos Normais e Excepcionais",
+            "description": "Os casos de teste cobrem tanto fluxos normais quanto excepcionais.",
+            "category": "Senso Comum",
+            "domain": "Qualidade e Manutenibilidade",
+            "use": "Cobertura"
+        },
+        "bp4": {
+            "title": "Análise de Valores Limites",
+            "description": "Os casos de teste realizam análise de valores limites.",
+            "category": "Senso Comum",
+            "domain": "Qualidade e Manutenibilidade",
+            "use": "Cobertura"
+        },
+        "bp5": {
+            "title": "Modularidade Completa dos Casos de Teste",
+            "description": "Os casos de teste são bem modularizados.",
+            "category": "Senso Comum",
+            "domain": "Qualidade e Manutenibilidade",
+            "use": "Documentação"
+        },
+        "bp6": {
+            "title": "Análise Detalhada de Tamanho e Complexidade",
+            "description": "Os casos de teste são pequenos e gerenciáveis em termos de tamanho e complexidade.",
+            "category": "Senso Comum",
+            "domain": "Qualidade e Manutenibilidade",
+            "use": "Tamanho/Complexidade"
+        },
+        "bp7": {
+            "title": "Design Complexo para Detecção de Erros",
+            "description": "Casos de teste complexos são projetados para detectar erros significativos.",
+            "category": "Senso Comum",
+            "domain": "Qualidade e Manutenibilidade",
+            "use": "Design"
+        },
+        "bp8": {
+            "title": "Manutenção Completa do Código de Teste",
+            "description": "O código de teste é mantido regularmente.",
+            "category": "Senso Comum",
+            "domain": "Qualidade e Manutenibilidade",
+            "use": "Design"
+        },
+        "bp9": {
+            "title": "Rastreabilidade Completa dos Casos de Teste",
+            "description": "Os casos de teste têm links de rastreabilidade para requisitos e código-fonte.",
+            "category": "Senso Comum",
+            "domain": "Gestão de Projetos",
+            "use": "Gestão do conhecimento"
+        },
+        "bp10": {
+            "title": "Uso Estrito de Testes de Desempenho e Segurança",
+            "description": "Testes de desempenho e segurança são realizados regularmente.",
+            "category": "Senso Comum",
+            "domain": "Desempenho e Segurança",
+            "use": "Desempenho/Segurança"
+        },
+        "bp11": {
+            "title": "Separação de Atividades de Teste e Desenvolvimento",
+            "description": "As atividades de teste são separadas das atividades de desenvolvimento.",
+            "category": "Senso Comum",
+            "domain": "Gestão de Projetos",
+            "use": "Planejamento antecipado"
+        },
+        "bp12": {
+            "title": "Revisão Regular dos Casos de Teste",
+            "description": "Os casos de teste são revisados regularmente.",
+            "category": "Senso Comum",
+            "domain": "Gestão de Projetos",
+            "use": "Revisão/Atualização"
+        },
+        "bp13": {
+            "title": "Entendimento Claro dos Casos de Teste",
+            "description": "Os casos de teste são claros e fáceis de entender.",
+            "category": "Senso Comum",
+            "domain": "Qualidade e Manutenibilidade",
+            "use": "Clareza"
+        },
+        "bp14": {
+            "title": "Planejamento Antecipado do Plano de Teste",
+            "description": "Os testes estão envolvidos antecipadamente na fase de planejamento.",
+            "category": "Senso Comum",
+            "domain": "Gestão de Projetos",
+            "use": "Alinhamento de negócios"
+        },
+        "bp15": {
+            "title": "Cobertura Estruturada do Processo de Teste",
+            "description": "Abordagens estruturadas para testes de integração são usadas.",
+            "category": "Senso Comum",
+            "domain": "Qualidade e Manutenibilidade",
+            "use": "Cobertura"
+        },
+        "bp16": {
+            "title": "Garantia Completa da Qualidade do Código de Teste",
+            "description": "Alta cobertura de código é garantida para os casos de teste.",
+            "category": "Senso Comum",
+            "domain": "Qualidade e Manutenibilidade",
+            "use": "Garantia de qualidade"
+        },
+        "bp17": {
+            "title": "Utilização Adequada da Cobertura do Código",
+            "description": "Métricas de cobertura do código são adequadamente utilizadas para garantir a qualidade do teste.",
+            "category": "Suportado pela Literatura",
+            "domain": "Qualidade e Manutenibilidade",
+            "use": "Garantia de qualidade"
+        },
+        "bp18": {
+            "title": "Utilização Necessária de Testes Faltantes",
+            "description": "Novos testes são criados para cobrir o código não testado com base em métricas de cobertura.",
+            "category": "Suportado pela Literatura",
+            "domain": "Gestão de Projetos",
+            "use": "Garantia de qualidade"
+        },
+        "bp19": {
+            "title": "Utilização Eficiente da Cobertura do Código",
+            "description": "Maiores taxas de detecção de erros são visadas em áreas de alta cobertura.",
+            "category": "Suportado pela Literatura",
+            "domain": "Gestão de Projetos",
+            "use": "Garantia de qualidade"
+        },
+        "bp20": {
+            "title": "Pequena Pegada de Geração",
+            "description": "Os casos de teste têm uma pegada pequena e executam código mínimo.",
+            "category": "Suportado pela Literatura",
+            "domain": "Qualidade e Manutenibilidade",
+            "use": "Tamanho/Complexidade"
+        },
+        "bp21": {
+            "title": "Priorização Completa do Design dos Casos de Teste",
+            "description": "O design dos casos de teste é priorizado para cobrir diversos requisitos.",
+            "category": "Suportado pela Literatura",
+            "domain": "Qualidade e Manutenibilidade",
+            "use": "Design"
+        },
+        "bp22": {
+            "title": "Adição Responsável de Manutenção",
+            "description": "Casos de teste são adicionados durante a manutenção para cobrir erros corrigidos.",
+            "category": "Suportado pela Literatura",
+            "domain": "Gestão de Projetos",
+            "use": "Revisão/Atualização"
+        },
+        "bp23": {
+            "title": "Utilização Adequada de Aserções de Teste",
+            "description": "Os casos de teste incluem asserções apropriadas para detectar erros.",
+            "category": "Suportado pela Literatura",
+            "domain": "Qualidade e Manutenibilidade",
+            "use": "Design"
+        },
+        "bp24": {
+            "title": "Adição Responsável de Comentários de Depuração",
+            "description": "Comentários de depuração são adicionados no código de teste.",
+            "category": "Suportado pela Literatura",
+            "domain": "Qualidade e Manutenibilidade",
+            "use": "Design"
+        },
+        "bp25": {
+            "title": "Design Determinista de Resultados",
+            "description": "Os casos de teste são projetados para resultados deterministas.",
+            "category": "Suportado pela Literatura",
+            "domain": "Qualidade e Manutenibilidade",
+            "use": "Design"
+        },
+        "bp26": {
+            "title": "Evitar Completamente Efeitos Colaterais",
+            "description": "Os casos de teste não têm efeitos colaterais.",
+            "category": "Suportado pela Literatura",
+            "domain": "Qualidade e Manutenibilidade",
+            "use": "Design"
+        },
+        "bp27": {
+            "title": "Utilização Adequada de Rótulos e Categorias",
+            "description": "Rótulos ou categorias são usados para organizar os casos de teste.",
+            "category": "Suportado pela Literatura",
+            "domain": "Gestão de Projetos",
+            "use": "Estrutura organizacional"
+        },
+        "bp28": {
+            "title": "Utilização Responsável da Geração Automática de Casos de Teste",
+            "description": "Ferramentas para geração automática de casos de teste são usadas de maneira responsável.",
+            "category": "Automação e Gestão de Testes",
+            "domain": "Ferramentas e Automação",
+            "use": "Ferramentas"
+        },
+        "bp29": {
+            "title": "Utilização Responsável de Ferramentas de Gestão",
+            "description": "As ferramentas de gestão de testes são utilizadas de forma eficaz.",
+            "category": "Automação e Gestão de Testes",
+            "domain": "Ferramentas e Automação",
+            "use": "Ferramentas"
+        },
+        "bp30": {
+            "title": "Utilização Adequada de Ferramentas de Estimativa",
+            "description": "Ferramentas de estimativa são usadas para avaliar o esforço e o cronograma do teste.",
+            "category": "Automação e Gestão de Testes",
+            "domain": "Ferramentas e Automação",
+            "use": "Ferramentas"
+        },
+        "bp31": {
+            "title": "Utilização Adequada da Ferramenta de Medição de Cobertura",
+            "description": "Ferramentas de medição de cobertura são usadas para garantir testes abrangentes.",
+            "category": "Automação e Gestão de Testes",
+            "domain": "Ferramentas e Automação",
+            "use": "Ferramentas"
+        },
+        "bp32": {
+            "title": "Utilização Completa da Ferramenta de Integração Contínua",
+            "description": "Ferramentas de integração contínua são integradas para execução automatizada de testes.",
+            "category": "Automação e Gestão de Testes",
+            "domain": "Ferramentas e Automação",
+            "use": "Ferramentas"
+        },
+        "bp33": {
+            "title": "Seleção Adequada de Ferramentas de Teste",
+            "description": "Ferramentas de teste são selecionadas com base nos requisitos do projeto.",
+            "category": "Automação e Gestão de Testes",
+            "domain": "Ferramentas e Automação",
+            "use": "Ferramentas"
+        },
+        "bp34": {
+            "title": "Ajuste Alinhado da Organização de Testes",
+            "description": "As atividades de teste estão alinhadas com a orientação de negócios.",
+            "category": "Orientado para Negócios",
+            "domain": "Gestão de Projetos",
+            "use": "Alinhamento de negócios"
+        },
+        "bp35": {
+            "title": "Utilização Responsável de Testes Baseados em Riscos",
+            "description": "Os esforços de teste são priorizados com base nos níveis de risco.",
+            "category": "Orientado para Negócios",
+            "domain": "Gestão de Projetos",
+            "use": "Gestão de riscos"
+        },
+        "bp36": {
+            "title": "Impacto Consciente na Organização de Testes",
+            "description": "A orientação de negócios influencia os processos de teste.",
+            "category": "Orientado para Negócios",
+            "domain": "Gestão de Projetos",
+            "use": "Estrutura organizacional"
+        },
+        "bp37": {
+            "title": "Impacto Consciente na Estratégia de Gestão do Conhecimento",
+            "description": "A orientação de negócios impacta na estratégia de gestão do conhecimento.",
+            "category": "Orientado para Negócios",
+            "domain": "Gestão de Projetos",
+            "use": "Gestão do conhecimento"
+        },
+        "bp38": {
+            "title": "Medição Cuidadosa do Impacto da Terceirização",
+            "description": "O impacto da terceirização de atividades de teste é medido.",
+            "category": "Orientado para Negócios",
+            "domain": "Gestão de Projetos",
+            "use": "Gestão do conhecimento"
+        },
+        "bp39": {
+            "title": "Utilização Completa da Metodologia de Testes",
+            "description": "Metodologias de teste definidas são seguidas.",
+            "category": "Orientado para Negócios",
+            "domain": "Gestão de Projetos",
+            "use": "Metodologia"
+        },
+        "bp40": {
+            "title": "Definição Clara dos Responsáveis pelos Testes",
+            "description": "Profissionais ou equipes responsáveis pelas atividades de teste são claramente definidos.",
+            "category": "Orientado para Negócios",
+            "domain": "Gestão de Projetos",
+            "use": "Estrutura organizacional"
+        }
+    },
+    "stepThree": {
+        "title": "Avaliação das Melhores Práticas",
+        "instructions": "A seguir, é apresentado um conjunto de práticas relacionadas com a qualidade de casos de teste juntamente com a categoria, o domínio a que pertencem e o uso em que podem ser enquadradas principalmente. Escolha o nível de relevância de cada prática em relação à sua categoria, domínio e uso. Além disso, caso deseje, também é possível incluir uma observação em cada uma das práticas.",
+        "evaluationCategory": "Nível de relevância com Categoria",
+        "evaluationDomain": "Nível de relevância com Domínio",
+        "evaluationUse": "Nível de relevância com Uso",
+        "observation": "Observação",
+        "submit": "Próximo",
+        "categoryName": "Categoria",
+        "domainName": "Domínio",
+        "useName": "Uso"
+    },
+    "stepFour": {
+        "title": "Priorização das Melhores Práticas",
+        "instructions": "A seguir, é apresentado um conjunto de práticas relacionadas com a qualidade de casos de teste em ordem aleatória. Arraste e ordene as práticas de acordo com o nível de prioridade que considerar.",
+        "submit": "Próximo"
+    },
+    "evaluationsRelev": {
+        "veryLow": "Muito baixa",
+        "low": "Baixa",
+        "moderate": "Moderada",
+        "high": "Alta",
+        "veryHigh": "Muito alta"
+    },
+    "stepFive": {
+        "title": "Ferramentas para Práticas",
+        "knowTool": "Você conhece alguma ferramenta de teste que apoie essa prática?",
+        "yes": "Sim",
+        "submit": "Próximo"
+    },
+    "thankYou": {
+        "title": "Obrigado!",
+        "message": "Obrigado por completar a pesquisa. Agradecemos seu feedback.",
+        "homeButton": "Finalizar"
+    }
+}

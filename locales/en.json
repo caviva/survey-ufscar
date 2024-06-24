@@ -1,0 +1,367 @@
+{
+    "appTitle": "Survey on Best Practices in Software Testing",
+    "logout": "Exit",
+    "stepOne": {
+        "title": "General Information",
+        "fullName": "Full Name",
+        "gender": "Gender",
+        "email": "Email",
+        "country": "Country",
+        "jobTitle": "Job Title",
+        "educationLevel": "Education Level",
+        "age": "Age",
+        "yearsOfExperience": "Years of Experience",
+        "register": "Next"
+    },
+    "genders": {
+        "male": "Male",
+        "female": "Female",
+        "other": "Other"
+    },
+    "tcle": {
+        "hide": "Hide Term of Free and Informed Consent",
+        "show": "Show Term of Free and Informed Consent",
+        "content": "Introduction",
+        "introduction": "Introduction",
+        "introductionContent": "I agree to participate in the non-invasive studies carried out by the researchers, as part of the research activities Characterization and classification of good test cases: best practices, essential features, and tools.\n\nDuring this process, concepts about quality in test cases and associated practices will be presented. I understand that during the activities I will assimilate these concepts and apply this knowledge throughout the stages. The researchers will carry out the study consisting of the collection, analysis, and reporting of data from the responses developed. I understand that I am not required to provide information about my answers in the activity and that I can request the removal of my results from the experiment at any time. I understand that there will be no additional credit or benefit for participating in these studies. I also understand that when data is collected and analyzed, my name will be removed from the data and will not be used at any time during the analysis or when the results are presented.",
+        "confidentiality": "Confidentiality",
+        "confidentialityContent": "All information collected in this study is confidential and my name will not be identified at any time. Likewise, I undertake not to communicate this content, to keep confidential the practices presented that are part of the experiment, and to respect the declared rules and licenses.",
+        "benefits": "Benefits and Withdrawal Freedom",
+        "benefitsContent": "I understand that the benefits I will receive from this study are limited to learning the material that is distributed and taught to fulfill the research process, regardless of whether or not I participate in these studies, but that the researchers hope to learn more about quality practices in test cases and the benefits that these studies bring to the context of Software Engineering. I understand that I am free to ask questions at any time or request that any information related to me not be included in the study. I understand that my participation is of my own free will with the sole objective of contributing to the advancement and development of techniques and processes for Software Engineering.",
+        "accept": "I have read and agree to the Term of Free and Informed Consent"
+    },
+    "stepTwo": {
+        "title": "Best Practices Evaluation",
+        "instructions": "Next, a set of practices related to the quality of test cases is presented. Provide your opinion on each one considering if you Strongly Agree, Agree, are Neutral, Disagree, or Strongly Disagree with each of them. Additionally, if desired, it is also possible to include an observation for each practice. If you have questions about what a particular practice entails, the 'Show More' link provides a brief description of the practice in question. There are 40 practices in total.",
+        "show": "Show More",
+        "hide": "Hide",
+        "evaluation": "Evaluation",
+        "observation": "Observation",
+        "submit": "Next",
+        "back": "Back"
+    },
+    "evaluations": {
+        "stronglyAgree": "Strongly Agree",
+        "agree": "Agree",
+        "neutral": "Neutral",
+        "disagree": "Disagree",
+        "stronglyDisagree": "Strongly Disagree"
+    },
+    "practices": {
+        "bp1": {
+            "title": "Atomic Specification of Test Cases",
+            "description": "Test cases are focused on a single requirement aspect.",
+            "category": "Common Sense",
+            "domain": "Project Management",
+            "use": "Independence"
+        },
+        "bp2": {
+            "title": "Complete Independence of Test Cases",
+            "description": "Test cases are independent from each other.",
+            "category": "Common Sense",
+            "domain": "Project Management",
+            "use": "Separation of activities"
+        },
+        "bp3": {
+            "title": "Coverage of Normal and Exceptional Flows",
+            "description": "Test cases cover both normal and exceptional flows.",
+            "category": "Common Sense",
+            "domain": "Quality and Maintainability",
+            "use": "Coverage"
+        },
+        "bp4": {
+            "title": "Boundary Values Analysis",
+            "description": "Test cases perform boundary value analysis.",
+            "category": "Common Sense",
+            "domain": "Quality and Maintainability",
+            "use": "Coverage"
+        },
+        "bp5": {
+            "title": "Complete Modularity of Test Cases",
+            "description": "Test cases are well-modularized.",
+            "category": "Common Sense",
+            "domain": "Quality and Maintainability",
+            "use": "Documentation"
+        },
+        "bp6": {
+            "title": "Detailed Analysis of Size and Complexity",
+            "description": "Test cases are small and manageable in terms of size and complexity.",
+            "category": "Common Sense",
+            "domain": "Quality and Maintainability",
+            "use": "Size/Complexity"
+        },
+        "bp7": {
+            "title": "Complex Design for Error Detection",
+            "description": "Complex test cases are designed to detect significant errors.",
+            "category": "Common Sense",
+            "domain": "Quality and Maintainability",
+            "use": "Design"
+        },
+        "bp8": {
+            "title": "Complete Maintenance of Test Code",
+            "description": "Test code is regularly maintained.",
+            "category": "Common Sense",
+            "domain": "Quality and Maintainability",
+            "use": "Design"
+        },
+        "bp9": {
+            "title": "Complete Traceability of Test Cases",
+            "description": "Test cases have traceability links to requirements and source code.",
+            "category": "Common Sense",
+            "domain": "Project Management",
+            "use": "Knowledge management"
+        },
+        "bp10": {
+            "title": "Strict Use of Performance and Security Testing",
+            "description": "Performance and security tests are conducted regularly.",
+            "category": "Common Sense",
+            "domain": "Performance and Security",
+            "use": "Performance/Security"
+        },
+        "bp11": {
+            "title": "Separation of Testing and Development Activities",
+            "description": "Testing activities are separated from development activities.",
+            "category": "Common Sense",
+            "domain": "Project Management",
+            "use": "Early planning"
+        },
+        "bp12": {
+            "title": "Regular Review of Test Cases",
+            "description": "Test cases are reviewed regularly.",
+            "category": "Common Sense",
+            "domain": "Project Management",
+            "use": "Review/Update"
+        },
+        "bp13": {
+            "title": "Clear Understanding of Test Cases",
+            "description": "Test cases are clear and easy to understand.",
+            "category": "Common Sense",
+            "domain": "Quality and Maintainability",
+            "use": "Clarity"
+        },
+        "bp14": {
+            "title": "Early Planning of Testing Plan",
+            "description": "Testing is involved early in the planning phase.",
+            "category": "Common Sense",
+            "domain": "Project Management",
+            "use": "Business alignment"
+        },
+        "bp15": {
+            "title": "Structured Coverage of Testing Process",
+            "description": "Structured approaches for integration testing are used.",
+            "category": "Common Sense",
+            "domain": "Quality and Maintainability",
+            "use": "Coverage"
+        },
+        "bp16": {
+            "title": "Complete Assurance of Test Code Quality",
+            "description": "High code coverage is ensured for test cases.",
+            "category": "Common Sense",
+            "domain": "Quality and Maintainability",
+            "use": "Quality assurance"
+        },
+        "bp17": {
+            "title": "Proper Utilization of Code Coverage",
+            "description": "Code coverage metrics are properly utilized to ensure test quality.",
+            "category": "Literature Supported",
+            "domain": "Quality and Maintainability",
+            "use": "Quality assurance"
+        },
+        "bp18": {
+            "title": "Required Utilization of Missing Tests",
+            "description": "New tests are created to cover untested code based on coverage metrics.",
+            "category": "Literature Supported",
+            "domain": "Project Management",
+            "use": "Quality assurance"
+        },
+        "bp19": {
+            "title": "Efficient Utilization of Code Coverage",
+            "description": "Higher error detection rates are aimed for in high coverage areas.",
+            "category": "Literature Supported",
+            "domain": "Project Management",
+            "use": "Quality assurance"
+        },
+        "bp20": {
+            "title": "Small Generation Footprint",
+            "description": "Test cases have a small footprint and execute minimal code.",
+            "category": "Literature Supported",
+            "domain": "Quality and Maintainability",
+            "use": "Size/Complexity"
+        },
+        "bp21": {
+            "title": "Complete Prioritization of Test Cases Design",
+            "description": "The design of test cases is prioritized to cover diverse requirements.",
+            "category": "Literature Supported",
+            "domain": "Quality and Maintainability",
+            "use": "Design"
+        },
+        "bp22": {
+            "title": "Responsible Addition of Maintenance",
+            "description": "Test cases are added during maintenance to cover fixed bugs.",
+            "category": "Literature Supported",
+            "domain": "Project Management",
+            "use": "Review/Update"
+        },
+        "bp23": {
+            "title": "Suitable Utilization of Test Assertions",
+            "description": "Test cases include appropriate assertions to detect errors.",
+            "category": "Literature Supported",
+            "domain": "Quality and Maintainability",
+            "use": "Design"
+        },
+        "bp24": {
+            "title": "Responsible Addition of Debugging Comments",
+            "description": "Debugging comments are added in the test code.",
+            "category": "Literature Supported",
+            "domain": "Quality and Maintainability",
+            "use": "Design"
+        },
+        "bp25": {
+            "title": "Deterministic Design of Results",
+            "description": "Test cases are designed for deterministic results.",
+            "category": "Literature Supported",
+            "domain": "Quality and Maintainability",
+            "use": "Design"
+        },
+        "bp26": {
+            "title": "Complete Avoidance of Side Effects",
+            "description": "Test cases do not have side effects.",
+            "category": "Literature Supported",
+            "domain": "Quality and Maintainability",
+            "use": "Design"
+        },
+        "bp27": {
+            "title": "Suitable Utilization of Labels and Categories",
+            "description": "Labels or categories are used to organize test cases.",
+            "category": "Literature Supported",
+            "domain": "Project Management",
+            "use": "Organizational structure"
+        },
+        "bp28": {
+            "title": "Responsible Utilization of Test Case Automatic Generation",
+            "description": "Tools for automatic generation of test cases are used responsibly.",
+            "category": "Test Automation and Management",
+            "domain": "Tools and Automation",
+            "use": "Tools"
+        },
+        "bp29": {
+            "title": "Responsible Utilization of Management Tools",
+            "description": "Test management tools are used effectively.",
+            "category": "Test Automation and Management",
+            "domain": "Tools and Automation",
+            "use": "Tools"
+        },
+        "bp30": {
+            "title": "Suitable Utilization of Estimation Tools",
+            "description": "Estimation tools are used to evaluate test effort and schedule.",
+            "category": "Test Automation and Management",
+            "domain": "Tools and Automation",
+            "use": "Tools"
+        },
+        "bp31": {
+            "title": "Suitable Utilization of Coverage Measurement Tool",
+            "description": "Coverage measurement tools are used to ensure comprehensive testing.",
+            "category": "Test Automation and Management",
+            "domain": "Tools and Automation",
+            "use": "Tools"
+        },
+        "bp32": {
+            "title": "Complete Utilization of Continuous Integration Tool",
+            "description": "Continuous integration tools are integrated for automated test execution.",
+            "category": "Test Automation and Management",
+            "domain": "Tools and Automation",
+            "use": "Tools"
+        },
+        "bp33": {
+            "title": "Suitable Selection of Testing Tools",
+            "description": "Testing tools are selected based on project requirements.",
+            "category": "Test Automation and Management",
+            "domain": "Tools and Automation",
+            "use": "Tools"
+        },
+        "bp34": {
+            "title": "Aligned Adjustment of Organizational Testing",
+            "description": "Testing activities are aligned with business orientation.",
+            "category": "Business Oriented",
+            "domain": "Project Management",
+            "use": "Business alignment"
+        },
+        "bp35": {
+            "title": "Responsible Utilization of Risk-based Testing",
+            "description": "Testing efforts are prioritized based on risk levels.",
+            "category": "Business Oriented",
+            "domain": "Project Management",
+            "use": "Risk management"
+        },
+        "bp36": {
+            "title": "Conscious Impact on Testing Organization",
+            "description": "Business orientation influences testing processes.",
+            "category": "Business Oriented",
+            "domain": "Project Management",
+            "use": "Organizational structure"
+        },
+        "bp37": {
+            "title": "Conscious Impact on Knowledge Management Strategy",
+            "description": "Business orientation impacts knowledge management strategy.",
+            "category": "Business Oriented",
+            "domain": "Project Management",
+            "use": "Knowledge management"
+        },
+        "bp38": {
+            "title": "Carefully Measure Outsourcing Impact",
+            "description": "The impact of outsourcing testing activities is measured.",
+            "category": "Business Oriented",
+            "domain": "Project Management",
+            "use": "Knowledge management"
+        },
+        "bp39": {
+            "title": "Complete Utilization of Testing Methodology",
+            "description": "Defined testing methodologies are adhered to.",
+            "category": "Business Oriented",
+            "domain": "Project Management",
+            "use": "Methodology"
+        },
+        "bp40": {
+            "title": "Clear Definition of Testing Responsible",
+            "description": "Professionals or teams responsible for testing activities are clearly defined.",
+            "category": "Business Oriented",
+            "domain": "Project Management",
+            "use": "Organizational structure"
+        }
+    },
+    "stepThree": {
+        "title": "Evaluation of Best Practices",
+        "instructions": "Next, a set of practices related to the quality of test cases is presented along with the category, the domain it belongs to, and the use where it can be mainly framed. Choose the level of relevance of each practice regarding its category, domain, and use. Additionally, if desired, it is also possible to include an observation for each practice.",
+        "evaluationCategory": "Level of relevance whit Category",
+        "evaluationDomain": "Level of relevance wiht Domain",
+        "evaluationUse": "Level of relevance wiht Use",
+        "observation": "Observation",
+        "submit": "Next",
+        "categoryName": "Category",
+        "domainName": "Domain",
+        "useName": "Use"
+    },
+    "stepFour": {
+        "title": "Priorization of Best Practices",
+        "instructions": "Next, a set of practices related to the quality of test cases is presented in random order. Drag and order the practices according to the level of priority you consider.",
+        "submit": "Next"
+    },
+    "evaluationsRelev": {
+        "veryLow": "Very Low",
+        "low": "Low",
+        "moderate": "Moderate",
+        "high": "High",
+        "veryHigh": "Very High"
+    },
+    "stepFive": {
+        "title": "Tools for Practices",
+        "knowTool": "Do you know any testing tool that supports this practice?",
+        "yes": "Yes",
+        "submit": "Next"
+    },
+    "thankYou": {
+        "title": "Thank You!",
+        "message": "Thank you for completing the survey. We appreciate your feedback.",
+        "homeButton": "Finish"
+    }
+}
