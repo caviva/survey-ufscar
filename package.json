@@ -2,7 +2,6 @@
   "name": "survey-ufscar",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vue-cli-service build",
