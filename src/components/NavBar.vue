@@ -16,18 +16,6 @@
     <div v-else class="text-gray-300 text-sm ml-4">
       <small>&nbsp;</small>
     </div>
-
-    <div class="flex items-center ml-auto">
-      <select
-        v-model="selectedLocale"
-        @change="changeLanguage"
-        class="bg-gray-700 text-white border border-gray-600 rounded-md p-1 mx-2"
-      >
-        <option value="en">English</option>
-        <option value="es">Español</option>
-        <option value="pt">Português</option>
-      </select>
-    </div>
   </nav>
 </template>
 
