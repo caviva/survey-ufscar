@@ -1,8 +1,77 @@
 <template>
   <div class="min-h-screen flex items-center justify-center bg-gray-100 py-6 sm:py-12">
     <div class="bg-white text-gray-900 p-6 rounded-lg shadow-lg w-full max-w-3xl">
-      <h1 class="text-2xl font-bold mb-4 text-center">{{ $t("stepOne.title") }}</h1>
+      <p class="text-2xl text-center font-bold mb-4">Welcome to this survey!</p>
+      <p class="text-gray-700 text-justify mb-6">
+        This survey aims to validate the findings of the study through a structured
+        evaluation process of:
+      </p>
+
+      <p class="text-xl text-center font-bold mb-4">
+        Characterization and Classification of Good Test Cases: Best Practices, Essential
+        Features, and Tools
+      </p>
+
+      <p class="text-gray-700 text-justify mb-6">
+        This study highlights the essential role of test cases in software testing,
+        focusing on validating functionality and ensuring software reliability. A
+        systematic literature review was conducted to address the lack of clarity and
+        consensus on best practices for creating high-quality test cases. The review
+        resulted in the identification and refinement of 40 best practices, categorized
+        into four groups: Common Sense Practices, Literature-Supported Practices, Test
+        Automation and Management Practices, and Business-Oriented Practices. These
+        practices aim to help practitioners develop effective test cases aligned with
+        organizational goals and industry standards. The study also highlights the role of
+        tools in enhancing testing efficiency and the need for further research to define
+        essential features of high-quality test case development.
+      </p>
+
+      <p class="text-xl text-left font-bold mb-4">Instructions:</p>
+      <ul class="list-disc list-inside ml-4 mb-6 text-gray-700 text-justify">
+        <li>
+          The survey consists of <strong>5 steps</strong>, each evaluating the 40 best
+          practices from different perspectives.
+        </li>
+        <li>
+          <strong>Important:</strong> You cannot go back to previous steps. Please make
+          sure to complete each step carefully.
+        </li>
+        <li>The estimated time to complete the survey is <strong>45 minutes</strong>.</li>
+      </ul>
+
+      <p class="text-gray-700 text-justify mb-6">
+        Your participation is crucial. Completing the entire survey ensures that all data
+        is stored correctly and contributes significantly to the study.
+      </p>
+
+      <p class="text-gray-700 text-center text-justify mb-6">
+        <strong>Thank you for your time and valuable input!</strong>
+      </p>
+
+      <br />
+
+      <p class="text-2xl text-center font-bold mb-4">Step 1/5 - User Registration</p>
+      <p class="text-gray-700 text-center mb-6">Estimated time: 5 minutes</p>
+
       <form @submit.prevent="registerUser" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="mb-3">
+          <label class="block text-sm font-medium text-gray-700">{{
+            $t("stepOne.fullName")
+          }}</label>
+          <div class="relative">
+            <input
+              v-model="form.fullName"
+              type="text"
+              class="mt-1 block w-full p-3 pl-10 border border-gray-300 rounded-md shadow-sm focus:ring-gray-500 focus:border-gray-500"
+              required
+            />
+            <div
+              class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
+            >
+              <i class="fas fa-user text-gray-500"></i>
+            </div>
+          </div>
+        </div>
         <div class="mb-3">
           <label class="block text-sm font-medium text-gray-700">{{
             $t("stepOne.gender")
@@ -13,9 +82,10 @@
               class="mt-1 block w-full p-3 pl-10 border border-gray-300 rounded-md shadow-sm focus:ring-gray-500 focus:border-gray-500 bg-white"
               required
             >
-              <option value="Male">{{ $t("genders.male") }}</option>
-              <option value="Female">{{ $t("genders.female") }}</option>
-              <option value="Other">{{ $t("genders.other") }}</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Non-binary">Non-binary</option>
+              <option value="Prefer not to say">Prefer not to say</option>
             </select>
             <div
               class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
@@ -122,11 +192,11 @@
           <transition name="fade">
             <div v-if="showTerms" class="mt-2 text-sm text-gray-700">
               <h2 class="font-bold mt-4">{{ $t("tcle.introduction") }}</h2>
-              <p>{{ $t("tcle.introductionContent") }}</p>
+              <p class="text-justify">{{ $t("tcle.introductionContent") }}</p>
               <h2 class="font-bold mt-4">{{ $t("tcle.confidentiality") }}</h2>
-              <p>{{ $t("tcle.confidentialityContent") }}</p>
+              <p class="text-justify">{{ $t("tcle.confidentialityContent") }}</p>
               <h2 class="font-bold mt-4">{{ $t("tcle.benefits") }}</h2>
-              <p>{{ $t("tcle.benefitsContent") }}</p>
+              <p class="text-justify">{{ $t("tcle.benefitsContent") }}</p>
             </div>
           </transition>
         </div>

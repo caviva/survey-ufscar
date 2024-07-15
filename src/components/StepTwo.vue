@@ -1,8 +1,20 @@
 <template>
   <div class="min-h-screen flex items-start justify-center bg-gray-100 py-6 sm:py-12">
     <div class="bg-white text-gray-900 p-6 rounded-lg shadow-lg w-full max-w-5xl">
-      <h1 class="text-2xl font-bold mb-4 text-center">{{ $t("stepTwo.title") }}</h1>
-      <p class="text-center text-gray-700 mb-4">{{ $t("stepTwo.instructions") }}</p>
+      <p class="text-2xl text-center font-bold mb-4">
+        Step 2/5 - Best Practices Evaluation
+      </p>
+      <p class="text-gray-700 text-center mb-6">Estimated time: 15 minutes</p>
+
+      <p class="text-justify text-gray-700 mb-4">
+        Next, you will be presented with a set of 40 practices related to the quality of
+        test cases. Please evaluate each practice by selecting one of the following
+        options: Strongly Agree, Agree, Slightly Agree, Neutral, Slightly Disagree,
+        Disagree, or Strongly Disagree. Additionally, you have the option to include an
+        observation for each practice. If you have questions about a particular practice,
+        you can click the 'Show More' link to see a brief description. It is important to
+        evaluate all 40 practices to complete the survey.
+      </p>
       <form @submit.prevent="submitEvaluation" class="space-y-4">
         <div
           v-for="(practice, index) in practices"
@@ -32,9 +44,21 @@
               <option value="Strongly Agree">
                 {{ $t("evaluations.stronglyAgree") }}
               </option>
-              <option value="Agree">{{ $t("evaluations.agree") }}</option>
-              <option value="Neutral">{{ $t("evaluations.neutral") }}</option>
-              <option value="Disagree">{{ $t("evaluations.disagree") }}</option>
+              <option value="Agree">
+                {{ $t("evaluations.agree") }}
+              </option>
+              <option value="Slightly Agree">
+                {{ $t("evaluations.slightlyAgree") }}
+              </option>
+              <option value="Neutral">
+                {{ $t("evaluations.neutral") }}
+              </option>
+              <option value="Slightly Disagree">
+                {{ $t("evaluations.slightlyDisagree") }}
+              </option>
+              <option value="Disagree">
+                {{ $t("evaluations.disagree") }}
+              </option>
               <option value="Strongly Disagree">
                 {{ $t("evaluations.stronglyDisagree") }}
               </option>

@@ -10,7 +10,7 @@
         "jobTitle": "Job Title",
         "educationLevel": "Education Level",
         "age": "Age",
-        "yearsOfExperience": "Years of Experience",
+        "yearsOfExperience": "Years of Experience in Software Testing",
         "register": "Next"
     },
     "genders": {
@@ -23,7 +23,7 @@
         "show": "Show Term of Free and Informed Consent",
         "content": "Introduction",
         "introduction": "Introduction",
-        "introductionContent": "I agree to participate in the non-invasive studies carried out by the researchers, as part of the research activities Characterization and classification of good test cases: best practices, essential features, and tools.\n\nDuring this process, concepts about quality in test cases and associated practices will be presented. I understand that during the activities I will assimilate these concepts and apply this knowledge throughout the stages. The researchers will carry out the study consisting of the collection, analysis, and reporting of data from the responses developed. I understand that I am not required to provide information about my answers in the activity and that I can request the removal of my results from the experiment at any time. I understand that there will be no additional credit or benefit for participating in these studies. I also understand that when data is collected and analyzed, my name will be removed from the data and will not be used at any time during the analysis or when the results are presented.",
+        "introductionContent": "I agree to participate in the non-invasive studies carried out by the researchers, as part of the research activities \"Characterization and classification of good test cases: best practices, essential features, and tools\".\n\nDuring this process, concepts about quality in test cases and associated practices will be presented. I understand that during the activities I will assimilate these concepts and apply this knowledge throughout the stages. The researchers will carry out the study consisting of the collection, analysis, and reporting of data from the responses developed. I understand that I am not required to provide information about my answers in the activity and that I can request the removal of my results from the experiment at any time. I understand that there will be no additional credit or benefit for participating in these studies. I also understand that when data is collected and analyzed, my name will be removed from the data and will not be used at any time during the analysis or when the results are presented.",
         "confidentiality": "Confidentiality",
         "confidentialityContent": "All information collected in this study is confidential and my name will not be identified at any time. Likewise, I undertake not to communicate this content, to keep confidential the practices presented that are part of the experiment, and to respect the declared rules and licenses.",
         "benefits": "Benefits and Withdrawal Freedom",
@@ -43,287 +43,289 @@
     "evaluations": {
         "stronglyAgree": "Strongly Agree",
         "agree": "Agree",
+        "slightlyAgree": "Slightly Agree",
         "neutral": "Neutral",
+        "slightlyDisagree": "Slightly Disagree",
         "disagree": "Disagree",
         "stronglyDisagree": "Strongly Disagree"
     },
     "practices": {
         "bp1": {
             "title": "Atomic Specification of Test Cases",
-            "description": "Test cases are focused on a single requirement aspect.",
+            "description": "A good test case should be specific or atomic, focusing on one requirement aspect. Test cases within a suite must be independent, ensuring accurate and reliable results. Independence avoids false positives or negatives and allows for better test coverage by concentrating on specific software aspects.",
             "category": "Common Sense",
             "domain": "Project Management",
             "use": "Independence"
         },
         "bp2": {
             "title": "Complete Independence of Test Cases",
-            "description": "Test cases are independent from each other.",
+            "description": "Test cases should be independent to provide flexibility in scheduling and reduce maintenance time and cost. Techniques like cloning support independence through adaptability and reusability. An overview of dependencies aids in understanding which test cases to execute based on feature changes.",
             "category": "Common Sense",
             "domain": "Project Management",
             "use": "Separation of activities"
         },
         "bp3": {
             "title": "Coverage of Normal and Exceptional Flows",
-            "description": "Test cases cover both normal and exceptional flows.",
+            "description": "Good test cases should cover both standard and exceptional flows to thoroughly test the application’s functionality. This approach identifies potential bugs or errors in the system.",
             "category": "Common Sense",
             "domain": "Quality and Maintainability",
             "use": "Coverage"
         },
         "bp4": {
             "title": "Boundary Values Analysis",
-            "description": "Test cases perform boundary value analysis.",
+            "description": "Test cases must perform boundary value analysis by obtaining input values at the edges of an input domain, identifying potential errors at the boundaries.",
             "category": "Common Sense",
             "domain": "Quality and Maintainability",
             "use": "Coverage"
         },
         "bp5": {
             "title": "Complete Modularity of Test Cases",
-            "description": "Test cases are well-modularized.",
+            "description": "Test cases should be well-modularized reference documentation. Well-written, well-commented test code following a consistent style is highly valued.",
             "category": "Common Sense",
             "domain": "Quality and Maintainability",
             "use": "Documentation"
         },
         "bp6": {
             "title": "Detailed Analysis of Size and Complexity",
-            "description": "Test cases are small and manageable in terms of size and complexity.",
+            "description": "Most test cases should be small to avoid difficulties in understanding and maintenance. Smaller test cases enhance focus, conciseness, and reusability, leading to more efficient testing processes.",
             "category": "Common Sense",
             "domain": "Quality and Maintainability",
             "use": "Size/Complexity"
         },
         "bp7": {
             "title": "Complex Design for Error Detection",
-            "description": "Complex test cases are designed to detect significant errors.",
+            "description": "While significant test cases may be necessary to detect problematic errors, a balance is crucial. Increased complexity in a test case can lead to difficulties in understanding and maintaining.",
             "category": "Common Sense",
             "domain": "Quality and Maintainability",
             "use": "Design"
         },
         "bp8": {
             "title": "Complete Maintenance of Test Code",
-            "description": "Test code is regularly maintained.",
+            "description": "Test code must be designed with maintainability, prioritizing good design principles such as modularization and separation of concerns.",
             "category": "Common Sense",
             "domain": "Quality and Maintainability",
             "use": "Design"
         },
         "bp9": {
             "title": "Complete Traceability of Test Cases",
-            "description": "Test cases have traceability links to requirements and source code.",
+            "description": "Traceability links between test code, requirements, and source code should be maintained for improved team efficiency and bug detection.",
             "category": "Common Sense",
             "domain": "Project Management",
             "use": "Knowledge management"
         },
         "bp10": {
             "title": "Strict Use of Performance and Security Testing",
-            "description": "Performance and security tests are conducted regularly.",
+            "description": "Different tests, including performance and security tests, are essential for evaluating system performance and identifying security vulnerabilities.",
             "category": "Common Sense",
             "domain": "Performance and Security",
             "use": "Performance/Security"
         },
         "bp11": {
             "title": "Separation of Testing and Development Activities",
-            "description": "Testing activities are separated from development activities.",
+            "description": "The decision to separate or integrate testing and development activities depends on project context and requirements.",
             "category": "Common Sense",
             "domain": "Project Management",
             "use": "Early planning"
         },
         "bp12": {
             "title": "Regular Review of Test Cases",
-            "description": "Test cases are reviewed regularly.",
+            "description": "Test cases should be regularly reviewed and updated, especially when requirements change.",
             "category": "Common Sense",
             "domain": "Project Management",
             "use": "Review/Update"
         },
         "bp13": {
             "title": "Clear Understanding of Test Cases",
-            "description": "Test cases are clear and easy to understand.",
+            "description": "Test cases should be clear, unambiguous, and simple to understand. Involving the test designer in formulating acceptance criteria can enhance the clarity of test cases.",
             "category": "Common Sense",
             "domain": "Quality and Maintainability",
             "use": "Clarity"
         },
         "bp14": {
             "title": "Early Planning of Testing Plan",
-            "description": "Testing is involved early in the planning phase.",
+            "description": "Early involvement of testing in the planning phase is emphasized for better quality software and reduced costs.",
             "category": "Common Sense",
             "domain": "Project Management",
             "use": "Business alignment"
         },
         "bp15": {
             "title": "Structured Coverage of Testing Process",
-            "description": "Structured approaches for integration testing are used.",
+            "description": "Different integration testing approaches like top-down and bottom-up should be applied based on specific requirements under test.",
             "category": "Common Sense",
             "domain": "Quality and Maintainability",
             "use": "Coverage"
         },
         "bp16": {
             "title": "Complete Assurance of Test Code Quality",
-            "description": "High code coverage is ensured for test cases.",
+            "description": "Metrics like code coverage are crucial for quality assurance of unit tests.",
             "category": "Common Sense",
             "domain": "Quality and Maintainability",
             "use": "Quality assurance"
         },
         "bp17": {
             "title": "Proper Utilization of Code Coverage",
-            "description": "Code coverage metrics are properly utilized to ensure test quality.",
+            "description": "While code coverage is a crucial metric in software testing, it alone does not ensure testing effectiveness. Test quality, encompassing factors like documentation, management, maintainability, and reusability, is crucial in complementing code coverage.",
             "category": "Literature Supported",
             "domain": "Quality and Maintainability",
             "use": "Quality assurance"
         },
         "bp18": {
             "title": "Required Utilization of Missing Tests",
-            "description": "New tests are created to cover untested code based on coverage metrics.",
+            "description": "Utilizing code coverage to identify gaps in test coverage and guide additional test creation is vital. Code coverage metrics offer insights into untested code areas, helping prioritize the creation of new tests to enhance coverage.",
             "category": "Literature Supported",
             "domain": "Project Management",
             "use": "Quality assurance"
         },
         "bp19": {
             "title": "Efficient Utilization of Code Coverage",
-            "description": "Higher error detection rates are aimed for in high coverage areas.",
+            "description": "Achieving higher code coverage does not automatically equate to better error detection. While extensive coverage is essential, it does not guarantee identifying all errors. Comprehensive testing practices and targeting specific fault patterns are crucial for thorough error detection.",
             "category": "Literature Supported",
             "domain": "Project Management",
             "use": "Quality assurance"
         },
         "bp20": {
             "title": "Small Generation Footprint",
-            "description": "Test cases have a small footprint and execute minimal code.",
+            "description": "Ensuring each test case has a small footprint, executing minimal code, is crucial for efficient testing. A small footprint reduces complexity and enhances focus, aiding in effective issue identification and isolation.",
             "category": "Literature Supported",
             "domain": "Quality and Maintainability",
             "use": "Size/Complexity"
         },
         "bp21": {
             "title": "Complete Prioritization of Test Cases Design",
-            "description": "The design of test cases is prioritized to cover diverse requirements.",
+            "description": "Prioritizing the design of test cases to cover diverse requirements is more critical than focusing solely on code coverage. This approach ensures the system meets desired functionality, usability, and performance criteria beyond code-centric considerations.",
             "category": "Literature Supported",
             "domain": "Quality and Maintainability",
             "use": "Design"
         },
         "bp22": {
             "title": "Responsible Addition of Maintenance",
-            "description": "Test cases are added during maintenance to cover fixed bugs.",
+            "description": "Adding test cases covering fixed bugs during maintenance is advisable to prevent regression. Regular test case maintenance improves software quality, reliability, and overall performance.",
             "category": "Literature Supported",
             "domain": "Project Management",
             "use": "Review/Update"
         },
         "bp23": {
             "title": "Suitable Utilization of Test Assertions",
-            "description": "Test cases include appropriate assertions to detect errors.",
+            "description": "Test assertions are invaluable for detecting subtle errors by explicitly stating expected behavior and comparing it during execution. This formal analysis enhances the fault-detecting ability of testing methods.",
             "category": "Literature Supported",
             "domain": "Quality and Maintainability",
             "use": "Design"
         },
         "bp24": {
             "title": "Responsible Addition of Debugging Comments",
-            "description": "Debugging comments are added in the test code.",
+            "description": "Including comments detailing common errors and possible causes in the test code aids in debugging failures. Comments serve as documentation for future reference, contributing to efficient debugging and code maintenance.",
             "category": "Literature Supported",
             "domain": "Quality and Maintainability",
             "use": "Design"
         },
         "bp25": {
             "title": "Deterministic Design of Results",
-            "description": "Test cases are designed for deterministic results.",
+            "description": "A good test case should be designed for deterministic results, avoiding flakiness. Precise and unambiguous test cases and well-defined acceptance criteria ensure consistent outcomes.",
             "category": "Literature Supported",
             "domain": "Quality and Maintainability",
             "use": "Design"
         },
         "bp26": {
             "title": "Complete Avoidance of Side Effects",
-            "description": "Test cases do not have side effects.",
+            "description": "Test cases in a suite should not have side effects to maintain the reliability and repeatability of the testing process. Avoiding side effects involves careful design without reliance on shared resources.",
             "category": "Literature Supported",
             "domain": "Quality and Maintainability",
             "use": "Design"
         },
         "bp27": {
             "title": "Suitable Utilization of Labels and Categories",
-            "description": "Labels or categories are used to organize test cases.",
+            "description": "Employing labels or categories facilitates selective execution of specific test sets. This organizational approach allows for efficient prioritization and execution based on criteria like test type, priority, or execution time.",
             "category": "Literature Supported",
             "domain": "Project Management",
             "use": "Organizational structure"
         },
         "bp28": {
             "title": "Responsible Utilization of Test Case Automatic Generation",
-            "description": "Tools for automatic generation of test cases are used responsibly.",
+            "description": "Utilize automatic generation of test cases responsibly to enhance efficiency while maintaining quality. Using tools to generate test cases is highly recommended as they significantly enhance testing efficiency and effectiveness by saving time and effort.",
             "category": "Test Automation and Management",
             "domain": "Tools and Automation",
             "use": "Tools"
         },
         "bp29": {
             "title": "Responsible Utilization of Management Tools",
-            "description": "Test management tools are used effectively.",
+            "description": "Employing test management tools for systematically monitoring and recording test results is essential. Test management tools are commonly used for systematically tracking and recording test results. These tools provide features that facilitate the management and organization of test cases, including cloning, adding, moving, and deleting test cases and steps.",
             "category": "Test Automation and Management",
             "domain": "Tools and Automation",
             "use": "Tools"
         },
         "bp30": {
             "title": "Suitable Utilization of Estimation Tools",
-            "description": "Estimation tools are used to evaluate test effort and schedule.",
+            "description": "The application of tools to evaluate the effort and schedule required for testing activities is crucial. Utilizing tools to estimate test effort and schedule is crucial for practical testing activities. These tools assist in evaluating the effort and time required for testing, aiding in efficient planning and resource allocation. ",
             "category": "Test Automation and Management",
             "domain": "Tools and Automation",
             "use": "Tools"
         },
         "bp31": {
             "title": "Suitable Utilization of Coverage Measurement Tool",
-            "description": "Coverage measurement tools are used to ensure comprehensive testing.",
+            "description": "Incorporating tools that measure testing coverage to ensure comprehensive testing of code or requirements is essential. Coverage measurement tools are instrumental in ensuring the comprehensive testing of code or requirements.",
             "category": "Test Automation and Management",
             "domain": "Tools and Automation",
             "use": "Tools"
         },
         "bp32": {
             "title": "Complete Utilization of Continuous Integration Tool",
-            "description": "Continuous integration tools are integrated for automated test execution.",
+            "description": "Integrating constant integration tools to automate test execution and promoting frequent and automated testing within the development process is crucial. Continuous integration tools for automated tests involve integrating these tools into the development process to automate test execution and promote frequent and automated testing.",
             "category": "Test Automation and Management",
             "domain": "Tools and Automation",
             "use": "Tools"
         },
         "bp33": {
             "title": "Suitable Selection of Testing Tools",
-            "description": "Testing tools are selected based on project requirements.",
+            "description": "Choosing test tools based on the specific features and requirements of the project is a critical aspect of software testing. This approach allows testers to choose tools best suited to the project's needs, enhancing the testing process. Factors such as the type of application being tested, testing objectives, available resources, and the expertise of the testing team influence the selection of test tools according to project features.",
             "category": "Test Automation and Management",
             "domain": "Tools and Automation",
             "use": "Tools"
         },
         "bp34": {
             "title": "Aligned Adjustment of Organizational Testing",
-            "description": "Testing activities are aligned with business orientation.",
+            "description": "Testing activities should be meticulously aligned with and adjusted according to the business orientation of the Organizational Unit. Aligning testing activities with the business orientation of the Organizational Unit is crucial. The nature of the business and its specific requirements significantly influence the testing process and employed strategies.",
             "category": "Business Oriented",
             "domain": "Project Management",
             "use": "Business alignment"
         },
         "bp35": {
             "title": "Responsible Utilization of Risk-based Testing",
-            "description": "Testing efforts are prioritized based on risk levels.",
+            "description": "Prioritizing testing efforts based on the level of risk associated with different aspects of the system is essential. Risk-based testing is an approach that allocates testing efforts according to the level of risk associated with various aspects of the system. This approach ensures a more efficient use of resources by focusing on areas posing the highest risk to the system's quality and functionality.",
             "category": "Business Oriented",
             "domain": "Project Management",
             "use": "Risk management"
         },
         "bp36": {
             "title": "Conscious Impact on Testing Organization",
-            "description": "Business orientation influences testing processes.",
+            "description": "An organization's business orientation influences the structure and organization of testing processes. The business orientation of an organization has a direct impact on the structure and organization of testing processes. Different business orientations may necessitate distinct testing approaches and strategies.",
             "category": "Business Oriented",
             "domain": "Project Management",
             "use": "Organizational structure"
         },
         "bp37": {
             "title": "Conscious Impact on Knowledge Management Strategy",
-            "description": "Business orientation impacts knowledge management strategy.",
+            "description": "The business orientation significantly influences the strategy for managing knowledge within the testing context. An organization's business orientation substantially affects the strategy for managing knowledge within the testing context.",
             "category": "Business Oriented",
             "domain": "Project Management",
             "use": "Knowledge management"
         },
         "bp38": {
             "title": "Carefully Measure Outsourcing Impact",
-            "description": "The impact of outsourcing testing activities is measured.",
+            "description": "Business orientation and knowledge management strategy have implications for outsourcing in testing, and the codification of knowledge facilitates testing outsourcing. Business orientation and knowledge management strategy have implications for outsourcing testing. In the context of testing outsourcing, the codification of knowledge can streamline the process.",
             "category": "Business Oriented",
             "domain": "Project Management",
             "use": "Knowledge management"
         },
         "bp39": {
             "title": "Complete Utilization of Testing Methodology",
-            "description": "Defined testing methodologies are adhered to.",
+            "description": "A defined method or process should be employed for testing activities. Using methodology or process in software testing entails employing a defined method or process for conducting testing activities. This includes following a structured approach to planning and designing software testing before coding, evaluating the quality of test artifacts, and analyzing identified defects.",
             "category": "Business Oriented",
             "domain": "Project Management",
             "use": "Methodology"
         },
         "bp40": {
             "title": "Clear Definition of Testing Responsible",
-            "description": "Professionals or teams responsible for testing activities are clearly defined.",
+            "description": "Clearly defining a reliable professional or team for overseeing and executing testing activities is essential. A responsible professional or team should be clearly defined to oversee and execute testing activities. This ensures accountability and practical testing. In small companies, software engineers often take on the responsibility of testing at all levels, from unit testing to system testing. A designated individual or team with a deep understanding of the testing process is crucial to ensuring efficient and effective testing.",
             "category": "Business Oriented",
             "domain": "Project Management",
             "use": "Organizational structure"

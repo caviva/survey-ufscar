@@ -1,7 +1,19 @@
 <template>
   <div class="min-h-screen flex items-center justify-center bg-gray-100 py-6 sm:py-12">
     <div class="bg-white text-gray-900 p-6 rounded-lg shadow-lg w-full max-w-5xl">
-      <h1 class="text-2xl font-bold mb-4 text-center">{{ $t("stepFive.title") }}</h1>
+      <p class="text-2xl text-center font-bold mb-4">
+        Step 5/5 - Tools Supporting Best Practices
+      </p>
+      <p class="text-gray-700 text-center mb-6">Estimated time: 10 minutes</p>
+      <p class="text-gray-700 text-justify mb-6">
+        Next, you will be presented with a set of 40 practices related to the quality of
+        test cases. For each practice, please indicate if you know of any software tools
+        that support or assist with that practice by selecting "Yes". If you select "Yes",
+        please provide the name and/or URL or any relevant information about the tool. It
+        is not required to respond to all practices, only to those for which you know a
+        supporting tool.
+      </p>
+
       <form @submit.prevent="submitForm" class="space-y-4">
         <div
           v-for="(practice, index) in practices"
@@ -27,7 +39,7 @@
             v-model="form[`bp${index + 1}`].observation"
             type="text"
             class="mt-2 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-gray-500 focus:border-gray-500"
-            placeholder="Type the tool here"
+            placeholder="Type the information tool here (name, URL, etc.)"
           />
         </div>
         <div class="flex justify-center">

@@ -1,30 +1,145 @@
 <template>
   <div class="min-h-screen flex items-start justify-center bg-gray-100 py-6 sm:py-12">
     <div class="bg-white text-gray-900 p-6 rounded-lg shadow-lg w-full max-w-5xl">
-      <h1 class="text-2xl font-bold mb-4 text-center">{{ $t("stepFour.title") }}</h1>
-      <p class="text-center text-gray-700 mb-4">{{ $t("stepFour.instructions") }}</p>
-      <draggable
-        v-model="practices"
-        item-key="id"
-        :options="{ animation: 200 }"
-        class="space-y-4"
-      >
-        <template #item="{ element, index }">
-          <div
-            class="bg-gray-50 p-4 rounded-lg shadow-md draggable-item flex items-center"
-          >
+      <p class="text-2xl text-center font-bold mb-4">
+        Step 4/5 - Best Practices Prioritization
+      </p>
+      <p class="text-gray-700 text-center mb-6">Estimated time: 10 minutes</p>
+      <p class="text-gray-700 text-justify mb-6">
+        Next, you will be presented with a set of practices related to the quality of test
+        cases, organized by their respective categories but presented in random order.
+        Please drag and reorder the practices according to the level of priority you
+        consider for each one. Each practice is presented with its description and the
+        category to which it belongs.
+      </p>
+
+      <div class="mb-8">
+        <h2 class="text-xl font-bold mb-4">Common sense:</h2>
+        <p>
+          This category encompasses practices based on common sense, experience, and a
+          basic understanding of system requirements. It focuses on practical and
+          realistic approaches to test case development.
+        </p>
+        <br />
+        <draggable
+          v-model="practices1to16"
+          item-key="id"
+          :options="{ animation: 200 }"
+          class="space-y-4"
+        >
+          <template #item="{ element, index }">
             <div
-              class="w-8 h-8 flex items-center justify-center bg-gray-200 rounded-full mr-4"
+              class="bg-gray-50 p-4 rounded-lg shadow-md draggable-item flex items-center"
             >
-              <span class="text-lg font-bold">{{ index + 1 }}</span>
+              <div
+                class="w-8 h-8 flex items-center justify-center bg-gray-200 rounded-full mr-4"
+              >
+                <span class="text-lg font-bold">{{ index + 1 }}</span>
+              </div>
+              <div>
+                <h2 class="text-lg font-semibold">{{ element.title }}</h2>
+                <p class="text-sm text-gray-700">{{ element.description }}</p>
+              </div>
             </div>
-            <div>
-              <h2 class="text-lg font-semibold">{{ element.title }}</h2>
-              <p class="text-sm text-gray-700">{{ element.description }}</p>
+          </template>
+        </draggable>
+      </div>
+
+      <div class="mb-8">
+        <h2 class="text-xl font-bold mb-4">Literature supported:</h2>
+        <p>
+          Practices in this category are based on research, studies, and Literature within
+          software testing.
+        </p>
+        <br />
+        <draggable
+          v-model="practices17to27"
+          item-key="id"
+          :options="{ animation: 200 }"
+          class="space-y-4"
+        >
+          <template #item="{ element, index }">
+            <div
+              class="bg-gray-50 p-4 rounded-lg shadow-md draggable-item flex items-center"
+            >
+              <div
+                class="w-8 h-8 flex items-center justify-center bg-gray-200 rounded-full mr-4"
+              >
+                <span class="text-lg font-bold">{{ index + 1 }}</span>
+              </div>
+              <div>
+                <h2 class="text-lg font-semibold">{{ element.title }}</h2>
+                <p class="text-sm text-gray-700">{{ element.description }}</p>
+              </div>
             </div>
-          </div>
-        </template>
-      </draggable>
+          </template>
+        </draggable>
+      </div>
+
+      <div class="mb-8">
+        <h2 class="text-xl font-bold mb-4">Test automation and management:</h2>
+        <p>
+          This category includes practices related to test automation and efficient test
+          case management. It emphasizes the use of tools and automation techniques to
+          improve efficiency.
+        </p>
+        <br />
+        <draggable
+          v-model="practices28to33"
+          item-key="id"
+          :options="{ animation: 200 }"
+          class="space-y-4"
+        >
+          <template #item="{ element, index }">
+            <div
+              class="bg-gray-50 p-4 rounded-lg shadow-md draggable-item flex items-center"
+            >
+              <div
+                class="w-8 h-8 flex items-center justify-center bg-gray-200 rounded-full mr-4"
+              >
+                <span class="text-lg font-bold">{{ index + 1 }}</span>
+              </div>
+              <div>
+                <h2 class="text-lg font-semibold">{{ element.title }}</h2>
+                <p class="text-sm text-gray-700">{{ element.description }}</p>
+              </div>
+            </div>
+          </template>
+        </draggable>
+      </div>
+
+      <div class="mb-8">
+        <h2 class="text-xl font-bold mb-4">Business oriented:</h2>
+        <p>
+          These practices are designed to align closely with administrative goals and
+          requirements. They focus on identifying and prioritizing test scenarios that
+          significantly impact organizational outcomes.
+        </p>
+        <br />
+        <draggable
+          v-model="practices34to40"
+          item-key="id"
+          :options="{ animation: 200 }"
+          class="space-y-4"
+        >
+          <template #item="{ element, index }">
+            <div
+              class="bg-gray-50 p-4 rounded-lg shadow-md draggable-item flex items-center"
+            >
+              <div
+                class="w-8 h-8 flex items-center justify-center bg-gray-200 rounded-full mr-4"
+              >
+                <span class="text-lg font-bold">{{ index + 1 }}</span>
+              </div>
+              <div>
+                <h2 class="text-lg font-semibold">{{ element.title }}</h2>
+                <p class="text-sm text-gray-700">{{ element.description }}</p>
+              </div>
+            </div>
+          </template>
+        </draggable>
+      </div>
+
       <div class="flex justify-center mt-6">
         <button
           type="button"
@@ -53,22 +168,44 @@ export default {
   setup() {
     const router = useRouter();
     const { t } = useI18n({ useScope: "global" });
-    const practices = ref([]);
+
+    const practices1to16 = ref([]);
+    const practices17to27 = ref([]);
+    const practices28to33 = ref([]);
+    const practices34to40 = ref([]);
 
     const initializePractices = () => {
       for (let index = 0; index < 40; index++) {
-        practices.value.push({
+        const practice = {
           id: index + 1,
           title: t(`practices.bp${index + 1}.title`),
           description: t(`practices.bp${index + 1}.description`),
-        });
+        };
+        if (index < 16) {
+          practices1to16.value.push(practice);
+        } else if (index < 27) {
+          practices17to27.value.push(practice);
+        } else if (index < 33) {
+          practices28to33.value.push(practice);
+        } else {
+          practices34to40.value.push(practice);
+        }
       }
     };
 
     const submitOrder = async () => {
       const userId = localStorage.getItem("userId");
       const payload = { userId };
-      practices.value.forEach((practice, index) => {
+      practices1to16.value.forEach((practice, index) => {
+        payload[`bp${practice.id}`] = { position: index + 1 };
+      });
+      practices17to27.value.forEach((practice, index) => {
+        payload[`bp${practice.id}`] = { position: index + 1 };
+      });
+      practices28to33.value.forEach((practice, index) => {
+        payload[`bp${practice.id}`] = { position: index + 1 };
+      });
+      practices34to40.value.forEach((practice, index) => {
         payload[`bp${practice.id}`] = { position: index + 1 };
       });
 
@@ -93,7 +230,10 @@ export default {
     });
 
     return {
-      practices,
+      practices1to16,
+      practices17to27,
+      practices28to33,
+      practices34to40,
       submitOrder,
     };
   },

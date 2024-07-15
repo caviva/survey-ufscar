@@ -1,7 +1,7 @@
 <template>
   <nav class="bg-gray-800 p-4 flex justify-between items-center">
     <div class="text-white font-bold text-xl">
-      {{ $t("appTitle") }}
+      Characterization and Classification of Good Test Cases
     </div>
 
     <div v-if="userId" class="text-gray-300 text-sm ml-4 flex items-center">
