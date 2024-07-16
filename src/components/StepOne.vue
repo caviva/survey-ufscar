@@ -36,7 +36,7 @@
           <strong>Important:</strong> You cannot go back to previous steps. Please make
           sure to complete each step carefully.
         </li>
-        <li>The estimated time to complete the survey is <strong>45 minutes</strong>.</li>
+        <li>The estimated time to complete the survey is <strong>50 minutes</strong>.</li>
       </ul>
 
       <p class="text-gray-700 text-justify mb-6">
