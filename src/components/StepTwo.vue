@@ -6,14 +6,17 @@
       </p>
       <p class="text-gray-700 text-center mb-6">Estimated time: 15 minutes</p>
 
-      <p class="text-justify text-gray-700 mb-4">
-        Next, you will be presented with a set of 40 practices related to the quality of
-        test cases. Please evaluate each practice by selecting one of the following
-        options: Strongly Agree, Agree, Slightly Agree, Neutral, Slightly Disagree,
-        Disagree, or Strongly Disagree. Additionally, you have the option to include an
-        observation for each practice. If you have questions about a particular practice,
-        you can click the 'Show More' link to see a brief description. It is important to
-        evaluate all 40 practices to complete the survey.
+      <p>
+        Next, you will be presented with a set of 27 practices specifically focused on
+        <strong>code-oriented practices</strong>, which are directly related to the
+        quality of test cases. <br />Please evaluate each practice by selecting one of the
+        following options: <em>Agree</em>, <em>Neutral</em>, or <em>Disagree</em>.
+        Additionally, you have the option to include an observation for each practice. If
+        you have questions about a particular practice, you can click the
+        <strong>'Show More'</strong> link to see a brief description. It is important to
+        evaluate all 26 practices to complete the survey, as they are crucial for
+        assessing the technical aspects of test case creation and execution, which are the
+        primary focus of this survey.
       </p>
       <form @submit.prevent="submitEvaluation" class="space-y-4">
         <div
@@ -41,26 +44,14 @@
               class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-gray-500 focus:border-gray-500 bg-white"
               required
             >
-              <option value="Strongly Agree">
-                {{ $t("evaluations.stronglyAgree") }}
-              </option>
               <option value="Agree">
                 {{ $t("evaluations.agree") }}
-              </option>
-              <option value="Slightly Agree">
-                {{ $t("evaluations.slightlyAgree") }}
               </option>
               <option value="Neutral">
                 {{ $t("evaluations.neutral") }}
               </option>
-              <option value="Slightly Disagree">
-                {{ $t("evaluations.slightlyDisagree") }}
-              </option>
               <option value="Disagree">
                 {{ $t("evaluations.disagree") }}
-              </option>
-              <option value="Strongly Disagree">
-                {{ $t("evaluations.stronglyDisagree") }}
               </option>
             </select>
           </div>
@@ -232,72 +223,7 @@ export default {
           title: this.$t("practices.bp27.title"),
           description: this.$t("practices.bp27.description"),
           showDescription: false,
-        },
-        {
-          title: this.$t("practices.bp28.title"),
-          description: this.$t("practices.bp28.description"),
-          showDescription: false,
-        },
-        {
-          title: this.$t("practices.bp29.title"),
-          description: this.$t("practices.bp29.description"),
-          showDescription: false,
-        },
-        {
-          title: this.$t("practices.bp30.title"),
-          description: this.$t("practices.bp30.description"),
-          showDescription: false,
-        },
-        {
-          title: this.$t("practices.bp31.title"),
-          description: this.$t("practices.bp31.description"),
-          showDescription: false,
-        },
-        {
-          title: this.$t("practices.bp32.title"),
-          description: this.$t("practices.bp32.description"),
-          showDescription: false,
-        },
-        {
-          title: this.$t("practices.bp33.title"),
-          description: this.$t("practices.bp33.description"),
-          showDescription: false,
-        },
-        {
-          title: this.$t("practices.bp34.title"),
-          description: this.$t("practices.bp34.description"),
-          showDescription: false,
-        },
-        {
-          title: this.$t("practices.bp35.title"),
-          description: this.$t("practices.bp35.description"),
-          showDescription: false,
-        },
-        {
-          title: this.$t("practices.bp36.title"),
-          description: this.$t("practices.bp36.description"),
-          showDescription: false,
-        },
-        {
-          title: this.$t("practices.bp37.title"),
-          description: this.$t("practices.bp37.description"),
-          showDescription: false,
-        },
-        {
-          title: this.$t("practices.bp38.title"),
-          description: this.$t("practices.bp38.description"),
-          showDescription: false,
-        },
-        {
-          title: this.$t("practices.bp39.title"),
-          description: this.$t("practices.bp39.description"),
-          showDescription: false,
-        },
-        {
-          title: this.$t("practices.bp40.title"),
-          description: this.$t("practices.bp40.description"),
-          showDescription: false,
-        },
+        }
       ],
       form: {
         bp1: { evaluation: "", observation: "" },
@@ -326,20 +252,6 @@ export default {
         bp24: { evaluation: "", observation: "" },
         bp25: { evaluation: "", observation: "" },
         bp26: { evaluation: "", observation: "" },
-        bp27: { evaluation: "", observation: "" },
-        bp28: { evaluation: "", observation: "" },
-        bp29: { evaluation: "", observation: "" },
-        bp30: { evaluation: "", observation: "" },
-        bp31: { evaluation: "", observation: "" },
-        bp32: { evaluation: "", observation: "" },
-        bp33: { evaluation: "", observation: "" },
-        bp34: { evaluation: "", observation: "" },
-        bp35: { evaluation: "", observation: "" },
-        bp36: { evaluation: "", observation: "" },
-        bp37: { evaluation: "", observation: "" },
-        bp38: { evaluation: "", observation: "" },
-        bp39: { evaluation: "", observation: "" },
-        bp40: { evaluation: "", observation: "" },
       },
     };
   },
@@ -388,5 +300,31 @@ export default {
 }
 .fade-enter, .fade-leave-to /* .fade-leave-active in <2.1.8 */ {
   opacity: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 20px;
+  max-width: 800px;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+p {
+  text-align: justify;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #555;
+}
+strong {
+  color: #000;
+}
+em {
+  font-style: italic;
+  color: #007bff;
 }
 </style>

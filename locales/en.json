@@ -41,13 +41,9 @@
         "back": "Back"
     },
     "evaluations": {
-        "stronglyAgree": "Strongly Agree",
         "agree": "Agree",
-        "slightlyAgree": "Slightly Agree",
         "neutral": "Neutral",
-        "slightlyDisagree": "Slightly Disagree",
-        "disagree": "Disagree",
-        "stronglyDisagree": "Strongly Disagree"
+        "disagree": "Disagree"
     },
     "practices": {
         "bp1": {
@@ -236,97 +232,6 @@
             "title": "Suitable Utilization of Labels and Categories",
             "description": "Employing labels or categories facilitates selective execution of specific test sets. This organizational approach allows for efficient prioritization and execution based on criteria like test type, priority, or execution time.",
             "category": "Literature Supported",
-            "domain": "Project Management",
-            "use": "Organizational structure"
-        },
-        "bp28": {
-            "title": "Responsible Utilization of Test Case Automatic Generation",
-            "description": "Utilize automatic generation of test cases responsibly to enhance efficiency while maintaining quality. Using tools to generate test cases is highly recommended as they significantly enhance testing efficiency and effectiveness by saving time and effort.",
-            "category": "Test Automation and Management",
-            "domain": "Tools and Automation",
-            "use": "Tools"
-        },
-        "bp29": {
-            "title": "Responsible Utilization of Management Tools",
-            "description": "Employing test management tools for systematically monitoring and recording test results is essential. Test management tools are commonly used for systematically tracking and recording test results. These tools provide features that facilitate the management and organization of test cases, including cloning, adding, moving, and deleting test cases and steps.",
-            "category": "Test Automation and Management",
-            "domain": "Tools and Automation",
-            "use": "Tools"
-        },
-        "bp30": {
-            "title": "Suitable Utilization of Estimation Tools",
-            "description": "The application of tools to evaluate the effort and schedule required for testing activities is crucial. Utilizing tools to estimate test effort and schedule is crucial for practical testing activities. These tools assist in evaluating the effort and time required for testing, aiding in efficient planning and resource allocation. ",
-            "category": "Test Automation and Management",
-            "domain": "Tools and Automation",
-            "use": "Tools"
-        },
-        "bp31": {
-            "title": "Suitable Utilization of Coverage Measurement Tool",
-            "description": "Incorporating tools that measure testing coverage to ensure comprehensive testing of code or requirements is essential. Coverage measurement tools are instrumental in ensuring the comprehensive testing of code or requirements.",
-            "category": "Test Automation and Management",
-            "domain": "Tools and Automation",
-            "use": "Tools"
-        },
-        "bp32": {
-            "title": "Complete Utilization of Continuous Integration Tool",
-            "description": "Integrating constant integration tools to automate test execution and promoting frequent and automated testing within the development process is crucial. Continuous integration tools for automated tests involve integrating these tools into the development process to automate test execution and promote frequent and automated testing.",
-            "category": "Test Automation and Management",
-            "domain": "Tools and Automation",
-            "use": "Tools"
-        },
-        "bp33": {
-            "title": "Suitable Selection of Testing Tools",
-            "description": "Choosing test tools based on the specific features and requirements of the project is a critical aspect of software testing. This approach allows testers to choose tools best suited to the project's needs, enhancing the testing process. Factors such as the type of application being tested, testing objectives, available resources, and the expertise of the testing team influence the selection of test tools according to project features.",
-            "category": "Test Automation and Management",
-            "domain": "Tools and Automation",
-            "use": "Tools"
-        },
-        "bp34": {
-            "title": "Aligned Adjustment of Organizational Testing",
-            "description": "Testing activities should be meticulously aligned with and adjusted according to the business orientation of the Organizational Unit. Aligning testing activities with the business orientation of the Organizational Unit is crucial. The nature of the business and its specific requirements significantly influence the testing process and employed strategies.",
-            "category": "Business Oriented",
-            "domain": "Project Management",
-            "use": "Business alignment"
-        },
-        "bp35": {
-            "title": "Responsible Utilization of Risk-based Testing",
-            "description": "Prioritizing testing efforts based on the level of risk associated with different aspects of the system is essential. Risk-based testing is an approach that allocates testing efforts according to the level of risk associated with various aspects of the system. This approach ensures a more efficient use of resources by focusing on areas posing the highest risk to the system's quality and functionality.",
-            "category": "Business Oriented",
-            "domain": "Project Management",
-            "use": "Risk management"
-        },
-        "bp36": {
-            "title": "Conscious Impact on Testing Organization",
-            "description": "An organization's business orientation influences the structure and organization of testing processes. The business orientation of an organization has a direct impact on the structure and organization of testing processes. Different business orientations may necessitate distinct testing approaches and strategies.",
-            "category": "Business Oriented",
-            "domain": "Project Management",
-            "use": "Organizational structure"
-        },
-        "bp37": {
-            "title": "Conscious Impact on Knowledge Management Strategy",
-            "description": "The business orientation significantly influences the strategy for managing knowledge within the testing context. An organization's business orientation substantially affects the strategy for managing knowledge within the testing context.",
-            "category": "Business Oriented",
-            "domain": "Project Management",
-            "use": "Knowledge management"
-        },
-        "bp38": {
-            "title": "Carefully Measure Outsourcing Impact",
-            "description": "Business orientation and knowledge management strategy have implications for outsourcing in testing, and the codification of knowledge facilitates testing outsourcing. Business orientation and knowledge management strategy have implications for outsourcing testing. In the context of testing outsourcing, the codification of knowledge can streamline the process.",
-            "category": "Business Oriented",
-            "domain": "Project Management",
-            "use": "Knowledge management"
-        },
-        "bp39": {
-            "title": "Complete Utilization of Testing Methodology",
-            "description": "A defined method or process should be employed for testing activities. Using methodology or process in software testing entails employing a defined method or process for conducting testing activities. This includes following a structured approach to planning and designing software testing before coding, evaluating the quality of test artifacts, and analyzing identified defects.",
-            "category": "Business Oriented",
-            "domain": "Project Management",
-            "use": "Methodology"
-        },
-        "bp40": {
-            "title": "Clear Definition of Testing Responsible",
-            "description": "Clearly defining a reliable professional or team for overseeing and executing testing activities is essential. A responsible professional or team should be clearly defined to oversee and execute testing activities. This ensures accountability and practical testing. In small companies, software engineers often take on the responsibility of testing at all levels, from unit testing to system testing. A designated individual or team with a deep understanding of the testing process is crucial to ensuring efficient and effective testing.",
-            "category": "Business Oriented",
             "domain": "Project Management",
             "use": "Organizational structure"
         }

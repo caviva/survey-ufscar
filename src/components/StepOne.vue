@@ -8,22 +8,75 @@
       </p>
 
       <p class="text-xl text-center font-bold mb-4">
-        Characterization and Classification of Good Test Cases: Best Practices, Essential
-        Features, and Tools
+        Best Practices, Essential Features, and Tool Support for Developing Good Test
+        Cases
       </p>
 
-      <p class="text-gray-700 text-justify mb-6">
-        This study highlights the essential role of test cases in software testing,
-        focusing on validating functionality and ensuring software reliability. A
-        systematic literature review was conducted to address the lack of clarity and
-        consensus on best practices for creating high-quality test cases. The review
-        resulted in the identification and refinement of 40 best practices, categorized
-        into four groups: Common Sense Practices, Literature-Supported Practices, Test
-        Automation and Management Practices, and Business-Oriented Practices. These
-        practices aim to help practitioners develop effective test cases aligned with
-        organizational goals and industry standards. The study also highlights the role of
-        tools in enhancing testing efficiency and the need for further research to define
-        essential features of high-quality test case development.
+      <p>
+        This study underscores the essential role of test cases in software testing,
+        emphasizing their importance in validating functionality and ensuring software
+        reliability. A systematic literature review identified and refined 40 best
+        practices, categorized into four groups:
+        <strong>Common Sense Practices</strong>,
+        <strong>Literature-Supported Practices</strong>,
+        <strong>Automation and Management Practices</strong>, and
+        <strong>Business-Oriented Practices</strong>. These practices aim to guide
+        practitioners in creating effective test cases that align with industry standards
+        and organizational goals.
+      </p>
+      <p>
+        To provide clarity, it is crucial to differentiate between
+        <strong>code-oriented</strong> and <strong>non-code-oriented</strong> practices:
+      </p>
+      <ul>
+        <li>
+          <strong>Code-Oriented Practices</strong>: These focus on the technical and
+          detailed aspects of test case creation and execution. They ensure reliability,
+          accuracy, and maintainability by directly addressing interactions with code,
+          system functionality, and software design. Code-oriented practices typically
+          require in-depth knowledge of the software being tested and are key to designing
+          efficient and technically sound test cases.
+          <ul>
+            <li>
+              <strong>Common Sense Practices</strong>: Practical approaches based on
+              experience and a basic understanding of system requirements.
+            </li>
+            <li>
+              <strong>Literature-Supported Practices</strong>: Evidence-backed practices
+              drawn from research and studies in the software testing field.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <strong>Non-Code-Oriented Practices</strong>: These practices address broader
+          testing processes, including planning, management, and alignment with business
+          objectives. They emphasize improving testing efficiency and ensuring activities
+          align with organizational goals, providing a higher-level perspective to enhance
+          overall software quality.
+          <ul>
+            <li>
+              <strong>Automation and Management Practices</strong>: Focused on tools and
+              automation techniques to streamline testing.
+            </li>
+            <li>
+              <strong>Business-Oriented Practices</strong>: Prioritize test scenarios that
+              impact organizational outcomes and goals.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <p>
+        Although both <strong>code-oriented</strong> and
+        <strong>non-code-oriented</strong> practices play important roles in software
+        testing, this survey focuses exclusively on code-oriented practices. This is
+        because the essential features of good test cases align directly with
+        code-oriented practices, as they involve the technical creation and execution of
+        test cases. The practices discussed in this study provide a clear methodological
+        framework for improving the quality of test cases by focusing on their technical
+        aspects. While non-code-oriented practices contribute to the administrative and
+        organizational dimensions of testing, they primarily enhance the application of
+        code-oriented practices. Thus, this survey emphasizes code-oriented practices to
+        provide actionable insights for creating robust and reliable test cases.
       </p>
 
       <p class="text-xl text-left font-bold mb-4">Instructions:</p>
@@ -55,9 +108,7 @@
 
       <form @submit.prevent="registerUser" class="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div class="mb-3">
-          <label class="block text-sm font-medium text-gray-700">{{
-            $t("stepOne.fullName")
-          }}</label>
+          <label class="block text-sm font-medium text-gray-700"> Full Name </label>
           <div class="relative">
             <input
               v-model="form.fullName"
@@ -73,9 +124,7 @@
           </div>
         </div>
         <div class="mb-3">
-          <label class="block text-sm font-medium text-gray-700">{{
-            $t("stepOne.gender")
-          }}</label>
+          <label class="block text-sm font-medium text-gray-700"> Gender </label>
           <div class="relative">
             <select
               v-model="form.gender"
@@ -95,9 +144,7 @@
           </div>
         </div>
         <div class="mb-3">
-          <label class="block text-sm font-medium text-gray-700">{{
-            $t("stepOne.email")
-          }}</label>
+          <label class="block text-sm font-medium text-gray-700"> Email </label>
           <div class="relative">
             <input
               v-model="form.email"
@@ -113,9 +160,7 @@
           </div>
         </div>
         <div class="mb-3">
-          <label class="block text-sm font-medium text-gray-700">{{
-            $t("stepOne.country")
-          }}</label>
+          <label class="block text-sm font-medium text-gray-700"> Country </label>
           <div class="relative">
             <input
               v-model="form.country"
@@ -131,9 +176,7 @@
           </div>
         </div>
         <div class="mb-3">
-          <label class="block text-sm font-medium text-gray-700">{{
-            $t("stepOne.jobTitle")
-          }}</label>
+          <label class="block text-sm font-medium text-gray-700"> Job Title </label>
           <div class="relative">
             <input
               v-model="form.jobTitle"
@@ -149,9 +192,7 @@
           </div>
         </div>
         <div class="mb-3">
-          <label class="block text-sm font-medium text-gray-700">{{
-            $t("stepOne.educationLevel")
-          }}</label>
+          <label class="block text-sm font-medium text-gray-700"> Education Level </label>
           <div class="relative">
             <input
               v-model="form.educationLevel"
@@ -167,9 +208,9 @@
           </div>
         </div>
         <div class="mb-3">
-          <label class="block text-sm font-medium text-gray-700">{{
-            $t("stepOne.yearsOfExperience")
-          }}</label>
+          <label class="block text-sm font-medium text-gray-700">
+            Years of Experience
+          </label>
           <div class="relative">
             <input
               v-model="form.yearsOfExperience"
@@ -286,5 +327,25 @@ export default {
 }
 .fade-enter, .fade-leave-to /* .fade-leave-active in <2.1.8 */ {
   opacity: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 20px;
+  max-width: 800px;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+p {
+  text-align: justify;
+  margin-bottom: 20px;
+}
+ul {
+  margin-left: 20px;
+}
+ul li {
+  margin-bottom: 10px;
 }
 </style>

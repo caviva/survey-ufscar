@@ -15,32 +15,6 @@
         completeness of the survey.
       </p>
 
-      <p class="text-gray-700 text-justify mb-6">
-        The practices are categorized as follows:
-      </p>
-
-      <ul class="list-disc list-inside ml-6 mb-8 text-gray-700 text-justify">
-        <li>
-          <strong>Common Sense:</strong> This category encompasses practices based on
-          common sense, experience, and a basic understanding of system requirements. It
-          focuses on practical and realistic approaches to test case development.
-        </li>
-        <li>
-          <strong>Literature Supported:</strong> Practices in this category are based on
-          research, studies, and literature within software testing.
-        </li>
-        <li>
-          <strong>Test Automation and Management:</strong> This category includes
-          practices related to test automation and efficient test case management. It
-          emphasizes the use of tools and automation techniques to improve efficiency.
-        </li>
-        <li>
-          <strong>Business Oriented:</strong> These practices are designed to align
-          closely with business goals and requirements. They focus on identifying and
-          prioritizing test scenarios that significantly impact organizational outcomes.
-        </li>
-      </ul>
-
       <form @submit.prevent="submitEvaluations" class="space-y-4">
         <div
           v-for="(practice, index) in practices"
@@ -121,7 +95,7 @@ export default {
   },
   methods: {
     initializeForm() {
-      for (let index = 1; index <= 40; index++) {
+      for (let index = 1; index <= 27; index++) {
         this.form[`bp${index}`] = {
           evaluationCategory: "",
           evaluationDomain: "",
@@ -131,7 +105,7 @@ export default {
       }
     },
     loadPractices() {
-      for (let index = 1; index <= 40; index++) {
+      for (let index = 1; index <= 27; index++) {
         this.practices.push({
           title: this.$t(`practices.bp${index}.title`),
           description: this.$t(`practices.bp${index}.description`),

@@ -6,12 +6,13 @@
       </p>
       <p class="text-gray-700 text-center mb-6">Estimated time: 10 minutes</p>
       <p class="text-gray-700 text-justify mb-6">
-        Next, you will be presented with a set of 40 practices related to the quality of
-        test cases. For each practice, please indicate if you know of any software tools
-        that support or assist with that practice by selecting "Yes". If you select "Yes",
-        please provide the name and/or URL or any relevant information about the tool. It
-        is not required to respond to all practices, only to those for which you know a
-        supporting tool.
+        Next, you will be presented with a set of 27 practices specifically focused on
+        <strong>code-oriented practices</strong>, which are directly related to the
+        creation and execution of high-quality test cases. For each practice, please
+        indicate if you know of any software tools that support or assist with that
+        practice by selecting "Yes". If you select "Yes", please provide the name and/or
+        URL or any relevant information about the tool. It is not required to respond to
+        all practices, only to those for which you know a supporting tool.
       </p>
 
       <form @submit.prevent="submitForm" class="space-y-4">
@@ -73,7 +74,7 @@ export default {
     const form = ref({});
 
     const initializePractices = () => {
-      for (let index = 0; index < 40; index++) {
+      for (let index = 0; index < 27; index++) {
         practices.value.push({
           title: t(`practices.bp${index + 1}.title`),
           description: t(`practices.bp${index + 1}.description`),
