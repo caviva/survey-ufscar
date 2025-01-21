@@ -252,6 +252,7 @@ export default {
         bp24: { evaluation: "", observation: "" },
         bp25: { evaluation: "", observation: "" },
         bp26: { evaluation: "", observation: "" },
+        bp27: { evaluation: "", observation: "" },
       },
     };
   },
