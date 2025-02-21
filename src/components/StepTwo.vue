@@ -213,16 +213,6 @@ export default {
           title: this.$t("practices.bp25.title"),
           description: this.$t("practices.bp25.description"),
           showDescription: false,
-        },
-        {
-          title: this.$t("practices.bp26.title"),
-          description: this.$t("practices.bp26.description"),
-          showDescription: false,
-        },
-        {
-          title: this.$t("practices.bp27.title"),
-          description: this.$t("practices.bp27.description"),
-          showDescription: false,
         }
       ],
       form: {

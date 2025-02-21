@@ -117,9 +117,9 @@ export default {
           title: t(`practices.bp${index + 1}.title`),
           description: t(`practices.bp${index + 1}.description`),
         };
-        if (index < 16) {
+        if (index < 14) {
           practices1to16.value.push(practice);
-        } else if (index < 27) {
+        } else if (index < 25) {
           practices17to27.value.push(practice);
         } else if (index < 33) {
           practices28to33.value.push(practice);

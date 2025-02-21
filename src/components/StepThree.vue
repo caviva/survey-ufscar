@@ -95,7 +95,7 @@ export default {
   },
   methods: {
     initializeForm() {
-      for (let index = 1; index <= 27; index++) {
+      for (let index = 1; index <= 25; index++) {
         this.form[`bp${index}`] = {
           evaluationCategory: "",
           evaluationDomain: "",
@@ -105,7 +105,7 @@ export default {
       }
     },
     loadPractices() {
-      for (let index = 1; index <= 27; index++) {
+      for (let index = 1; index <= 25; index++) {
         this.practices.push({
           title: this.$t(`practices.bp${index}.title`),
           description: this.$t(`practices.bp${index}.description`),

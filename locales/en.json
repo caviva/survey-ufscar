@@ -117,118 +117,104 @@
             "use": "Performance/Security"
         },
         "bp11": {
-            "title": "Separation of Testing and Development Activities",
-            "description": "The decision to separate or integrate testing and development activities depends on project context and requirements.",
-            "category": "Common Sense",
-            "domain": "Project Management",
-            "use": "Early planning"
-        },
-        "bp12": {
             "title": "Regular Review of Test Cases",
             "description": "Test cases should be regularly reviewed and updated, especially when requirements change.",
             "category": "Common Sense",
             "domain": "Project Management",
             "use": "Review/Update"
         },
-        "bp13": {
+        "bp12": {
             "title": "Clear Understanding of Test Cases",
             "description": "Test cases should be clear, unambiguous, and simple to understand. Involving the test designer in formulating acceptance criteria can enhance the clarity of test cases.",
             "category": "Common Sense",
             "domain": "Quality and Maintainability",
             "use": "Clarity"
         },
-        "bp14": {
-            "title": "Early Planning of Testing Plan",
-            "description": "Early involvement of testing in the planning phase is emphasized for better quality software and reduced costs.",
-            "category": "Common Sense",
-            "domain": "Project Management",
-            "use": "Business alignment"
-        },
-        "bp15": {
+        "bp13": {
             "title": "Structured Coverage of Testing Process",
             "description": "Different integration testing approaches like top-down and bottom-up should be applied based on specific requirements under test.",
             "category": "Common Sense",
             "domain": "Quality and Maintainability",
             "use": "Coverage"
         },
-        "bp16": {
+        "bp14": {
             "title": "Complete Assurance of Test Code Quality",
             "description": "Metrics like code coverage are crucial for quality assurance of unit tests.",
             "category": "Common Sense",
             "domain": "Quality and Maintainability",
             "use": "Quality assurance"
         },
-        "bp17": {
+        "bp15": {
             "title": "Proper Utilization of Code Coverage",
             "description": "While code coverage is a crucial metric in software testing, it alone does not ensure testing effectiveness. Test quality, encompassing factors like documentation, management, maintainability, and reusability, is crucial in complementing code coverage.",
             "category": "Literature Supported",
             "domain": "Quality and Maintainability",
             "use": "Quality assurance"
         },
-        "bp18": {
+        "bp16": {
             "title": "Required Utilization of Missing Tests",
             "description": "Utilizing code coverage to identify gaps in test coverage and guide additional test creation is vital. Code coverage metrics offer insights into untested code areas, helping prioritize the creation of new tests to enhance coverage.",
             "category": "Literature Supported",
             "domain": "Project Management",
             "use": "Quality assurance"
         },
-        "bp19": {
+        "bp17": {
             "title": "Efficient Utilization of Code Coverage",
             "description": "Achieving higher code coverage does not automatically equate to better error detection. While extensive coverage is essential, it does not guarantee identifying all errors. Comprehensive testing practices and targeting specific fault patterns are crucial for thorough error detection.",
             "category": "Literature Supported",
             "domain": "Project Management",
             "use": "Quality assurance"
         },
-        "bp20": {
+        "bp18": {
             "title": "Small Generation Footprint",
             "description": "Ensuring each test case has a small footprint, executing minimal code, is crucial for efficient testing. A small footprint reduces complexity and enhances focus, aiding in effective issue identification and isolation.",
             "category": "Literature Supported",
             "domain": "Quality and Maintainability",
             "use": "Size/Complexity"
         },
-        "bp21": {
+        "bp19": {
             "title": "Complete Prioritization of Test Cases Design",
             "description": "Prioritizing the design of test cases to cover diverse requirements is more critical than focusing solely on code coverage. This approach ensures the system meets desired functionality, usability, and performance criteria beyond code-centric considerations.",
             "category": "Literature Supported",
             "domain": "Quality and Maintainability",
             "use": "Design"
         },
-        "bp22": {
+        "bp20": {
             "title": "Responsible Addition of Maintenance",
             "description": "Adding test cases covering fixed bugs during maintenance is advisable to prevent regression. Regular test case maintenance improves software quality, reliability, and overall performance.",
             "category": "Literature Supported",
             "domain": "Project Management",
             "use": "Review/Update"
         },
-        "bp23": {
+        "bp21": {
             "title": "Suitable Utilization of Test Assertions",
             "description": "Test assertions are invaluable for detecting subtle errors by explicitly stating expected behavior and comparing it during execution. This formal analysis enhances the fault-detecting ability of testing methods.",
             "category": "Literature Supported",
             "domain": "Quality and Maintainability",
             "use": "Design"
         },
-        "bp24": {
+        "bp22": {
             "title": "Responsible Addition of Debugging Comments",
             "description": "Including comments detailing common errors and possible causes in the test code aids in debugging failures. Comments serve as documentation for future reference, contributing to efficient debugging and code maintenance.",
             "category": "Literature Supported",
             "domain": "Quality and Maintainability",
             "use": "Design"
         },
-        "bp25": {
+        "bp23": {
             "title": "Deterministic Design of Results",
             "description": "A good test case should be designed for deterministic results, avoiding flakiness. Precise and unambiguous test cases and well-defined acceptance criteria ensure consistent outcomes.",
             "category": "Literature Supported",
             "domain": "Quality and Maintainability",
             "use": "Design"
         },
-        "bp26": {
+        "bp24": {
             "title": "Complete Avoidance of Side Effects",
             "description": "Test cases in a suite should not have side effects to maintain the reliability and repeatability of the testing process. Avoiding side effects involves careful design without reliance on shared resources.",
             "category": "Literature Supported",
             "domain": "Quality and Maintainability",
             "use": "Design"
         },
-        "bp27": {
+        "bp25": {
             "title": "Suitable Utilization of Labels and Categories",
             "description": "Employing labels or categories facilitates selective execution of specific test sets. This organizational approach allows for efficient prioritization and execution based on criteria like test type, priority, or execution time.",
             "category": "Literature Supported",

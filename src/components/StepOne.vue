@@ -162,12 +162,123 @@
         <div class="mb-3">
           <label class="block text-sm font-medium text-gray-700"> Country </label>
           <div class="relative">
-            <input
+            <select
               v-model="form.country"
-              type="text"
-              class="mt-1 block w-full p-3 pl-10 border border-gray-300 rounded-md shadow-sm focus:ring-gray-500 focus:border-gray-500"
+              class="mt-1 block w-full p-3 pl-10 border border-gray-300 rounded-md shadow-sm focus:ring-gray-500 focus:border-gray-500 bg-white"
               required
-            />
+            >
+              <option value="" disabled selected>Select a country</option>
+              <option value="afghanistan">Afghanistan</option>
+              <option value="albania">Albania</option>
+              <option value="algeria">Algeria</option>
+              <option value="andorra">Andorra</option>
+              <option value="angola">Angola</option>
+              <option value="argentina">Argentina</option>
+              <option value="armenia">Armenia</option>
+              <option value="australia">Australia</option>
+              <option value="austria">Austria</option>
+              <option value="azerbaijan">Azerbaijan</option>
+              <option value="bahamas">Bahamas</option>
+              <option value="bahrain">Bahrain</option>
+              <option value="bangladesh">Bangladesh</option>
+              <option value="barbados">Barbados</option>
+              <option value="belarus">Belarus</option>
+              <option value="belgium">Belgium</option>
+              <option value="belize">Belize</option>
+              <option value="benin">Benin</option>
+              <option value="bhutan">Bhutan</option>
+              <option value="bolivia">Bolivia</option>
+              <option value="bosnia">Bosnia and Herzegovina</option>
+              <option value="botswana">Botswana</option>
+              <option value="brazil">Brazil</option>
+              <option value="bulgaria">Bulgaria</option>
+              <option value="burkina_faso">Burkina Faso</option>
+              <option value="burundi">Burundi</option>
+              <option value="cambodia">Cambodia</option>
+              <option value="cameroon">Cameroon</option>
+              <option value="canada">Canada</option>
+              <option value="chile">Chile</option>
+              <option value="china">China</option>
+              <option value="colombia">Colombia</option>
+              <option value="costa_rica">Costa Rica</option>
+              <option value="croatia">Croatia</option>
+              <option value="cuba">Cuba</option>
+              <option value="cyprus">Cyprus</option>
+              <option value="czech_republic">Czech Republic</option>
+              <option value="denmark">Denmark</option>
+              <option value="dominican_republic">Dominican Republic</option>
+              <option value="ecuador">Ecuador</option>
+              <option value="egypt">Egypt</option>
+              <option value="el_salvador">El Salvador</option>
+              <option value="estonia">Estonia</option>
+              <option value="ethiopia">Ethiopia</option>
+              <option value="finland">Finland</option>
+              <option value="france">France</option>
+              <option value="germany">Germany</option>
+              <option value="greece">Greece</option>
+              <option value="guatemala">Guatemala</option>
+              <option value="honduras">Honduras</option>
+              <option value="hungary">Hungary</option>
+              <option value="iceland">Iceland</option>
+              <option value="india">India</option>
+              <option value="indonesia">Indonesia</option>
+              <option value="iran">Iran</option>
+              <option value="iraq">Iraq</option>
+              <option value="ireland">Ireland</option>
+              <option value="israel">Israel</option>
+              <option value="italy">Italy</option>
+              <option value="jamaica">Jamaica</option>
+              <option value="japan">Japan</option>
+              <option value="jordan">Jordan</option>
+              <option value="kazakhstan">Kazakhstan</option>
+              <option value="kenya">Kenya</option>
+              <option value="korea_south">South Korea</option>
+              <option value="kuwait">Kuwait</option>
+              <option value="latvia">Latvia</option>
+              <option value="lebanon">Lebanon</option>
+              <option value="libya">Libya</option>
+              <option value="lithuania">Lithuania</option>
+              <option value="luxembourg">Luxembourg</option>
+              <option value="malaysia">Malaysia</option>
+              <option value="mexico">Mexico</option>
+              <option value="morocco">Morocco</option>
+              <option value="netherlands">Netherlands</option>
+              <option value="new_zealand">New Zealand</option>
+              <option value="nicaragua">Nicaragua</option>
+              <option value="nigeria">Nigeria</option>
+              <option value="norway">Norway</option>
+              <option value="pakistan">Pakistan</option>
+              <option value="panama">Panama</option>
+              <option value="paraguay">Paraguay</option>
+              <option value="peru">Peru</option>
+              <option value="philippines">Philippines</option>
+              <option value="poland">Poland</option>
+              <option value="portugal">Portugal</option>
+              <option value="qatar">Qatar</option>
+              <option value="romania">Romania</option>
+              <option value="russia">Russia</option>
+              <option value="saudi_arabia">Saudi Arabia</option>
+              <option value="serbia">Serbia</option>
+              <option value="singapore">Singapore</option>
+              <option value="slovakia">Slovakia</option>
+              <option value="slovenia">Slovenia</option>
+              <option value="south_africa">South Africa</option>
+              <option value="spain">Spain</option>
+              <option value="sweden">Sweden</option>
+              <option value="switzerland">Switzerland</option>
+              <option value="thailand">Thailand</option>
+              <option value="tunisia">Tunisia</option>
+              <option value="turkey">Turkey</option>
+              <option value="ukraine">Ukraine</option>
+              <option value="united_arab_emirates">United Arab Emirates</option>
+              <option value="united_kingdom">United Kingdom</option>
+              <option value="united_states">United States</option>
+              <option value="uruguay">Uruguay</option>
+              <option value="venezuela">Venezuela</option>
+              <option value="vietnam">Vietnam</option>
+              <option value="yemen">Yemen</option>
+              <option value="zimbabwe">Zimbabwe</option>
+            </select>
             <div
               class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
             >
@@ -178,12 +289,14 @@
         <div class="mb-3">
           <label class="block text-sm font-medium text-gray-700"> Job Title </label>
           <div class="relative">
-            <input
+            <select
               v-model="form.jobTitle"
-              type="text"
-              class="mt-1 block w-full p-3 pl-10 border border-gray-300 rounded-md shadow-sm focus:ring-gray-500 focus:border-gray-500"
+              class="mt-1 block w-full p-3 pl-10 border border-gray-300 rounded-md shadow-sm focus:ring-gray-500 focus:border-gray-500 bg-white"
               required
-            />
+            >
+              <option value="academic">Academic</option>
+              <option value="industry">Industry</option>
+            </select>
             <div
               class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
             >
@@ -194,12 +307,19 @@
         <div class="mb-3">
           <label class="block text-sm font-medium text-gray-700"> Education Level </label>
           <div class="relative">
-            <input
+            <select
               v-model="form.educationLevel"
-              type="text"
-              class="mt-1 block w-full p-3 pl-10 border border-gray-300 rounded-md shadow-sm focus:ring-gray-500 focus:border-gray-500"
+              class="mt-1 block w-full p-3 pl-10 border border-gray-300 rounded-md shadow-sm focus:ring-gray-500 focus:border-gray-500 bg-white"
               required
-            />
+            >
+              <option value="" disabled selected>Select an option</option>
+              <option value="high_school">High School</option>
+              <option value="associate">Associate Degree</option>
+              <option value="bachelor">Bachelor's Degree</option>
+              <option value="master">Master's Degree</option>
+              <option value="phd">PhD</option>
+              <option value="other">Other</option>
+            </select>
             <div
               class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
             >
@@ -209,7 +329,7 @@
         </div>
         <div class="mb-3">
           <label class="block text-sm font-medium text-gray-700">
-            Years of Experience
+            Years of Experience in Software Testing
           </label>
           <div class="relative">
             <input

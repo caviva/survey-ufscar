@@ -74,7 +74,7 @@ export default {
     const form = ref({});
 
     const initializePractices = () => {
-      for (let index = 0; index < 27; index++) {
+      for (let index = 0; index < 25; index++) {
         practices.value.push({
           title: t(`practices.bp${index + 1}.title`),
           description: t(`practices.bp${index + 1}.description`),
